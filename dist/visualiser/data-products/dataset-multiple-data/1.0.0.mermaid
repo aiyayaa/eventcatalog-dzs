@@ -1,0 +1,25 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: data-products/dataset-multiple-data (v1.0.0)
+%% Generated: 2026-04-16T13:27:04.661Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data_products fill:#6366f1,stroke:#4338ca,color:#fff
+
+    %% Nodes
+    ty_dzs00_05_1_0_0[["探源科学卫星数据产品归档汇交服务软件 (1.0.0)"]]:::services
+    ty_0x_dzs_03_1_0_0[["XX卫星任务数据库及管理软件 (1.0.0)"]]:::services
+    dataset_multiple_data_1_0_0[["泛数据 (1.0.0)"]]:::data_products
+    ty_dzs00_03_1_0_0[["探源科学卫星元数据编审与数据集构建软件 (1.0.0)"]]:::services
+    ty_dzs00_04_1_0_0[["探源科学卫星数据集档案库及管理软件 (1.0.0)"]]:::services
+    ty_0x_dzs_05_1_0_0[["XX卫星科学可视化与产品发布网站 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_dzs00_05_1_0_0 -->|"input"| dataset_multiple_data_1_0_0
+    ty_0x_dzs_03_1_0_0 -->|"input"| dataset_multiple_data_1_0_0
+    dataset_multiple_data_1_0_0 -->|"output"| ty_0x_dzs_03_1_0_0
+    dataset_multiple_data_1_0_0 -->|"output"| ty_dzs00_03_1_0_0
+    dataset_multiple_data_1_0_0 -->|"output"| ty_dzs00_04_1_0_0
+    dataset_multiple_data_1_0_0 -->|"output"| ty_0x_dzs_05_1_0_0

@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: services/ty-dzs00-03 (v1.0.0)
+%% Generated: 2026-04-16T13:27:04.568Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef commands fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    ty_dzs00_03_1_0_0[["探源科学卫星元数据编审与数据集构建软件 (1.0.0)"]]:::services
+    dataset_info_register_1_0_0>"数据集信息入档案库 (1.0.0)"]:::commands
+    ty_dzs00_04_1_0_0[["探源科学卫星数据集档案库及管理软件 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_dzs00_03_1_0_0 -->|"invokes"| dataset_info_register_1_0_0
+    dataset_info_register_1_0_0 -->|"accepts"| ty_dzs00_04_1_0_0

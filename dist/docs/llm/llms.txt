@@ -1,0 +1,36 @@
+# DZS EventCatalog Documentation
+
+> DZS event-driven architecture catalog for domains, services, events, and message contracts.
+
+## Events
+
+
+## Commands
+- [数据集信息入档案库 - dataset-info-register - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/commands/dataset-info-register/1.0.0.mdx) 
+
+## Queries
+
+
+## Services
+- [任务运控与决策支持分系统 - dzy - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/dzy/1.0.0.mdx) - [空间环境预报中心 - spec - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/spec/1.0.0.mdx) - [XX卫星数据预处理与质量分析软件 - ty-0x-dzs-01 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-0x-dzs-01/1.0.0.mdx) - [XX卫星数据产品规范化审核与完整性判读软件 - ty-0x-dzs-02 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-0x-dzs-02/1.0.0.mdx) - [XX卫星任务数据库及管理软件 - ty-0x-dzs-03 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-0x-dzs-03/1.0.0.mdx) - [XX卫星数据产品订阅与分发服务软件 - ty-0x-dzs-04 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-0x-dzs-04/1.0.0.mdx) - [XX卫星科学可视化与产品发布网站 - ty-0x-dzs-05 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-0x-dzs-05/1.0.0.mdx) - [探源科学卫星数据处理作业调度引擎软件 - ty-dzs00-01 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-01/1.0.0.mdx) - [探源科学卫星公共信息库管理软件 - ty-dzs00-02 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-02/1.0.0.mdx) - [探源科学卫星元数据编审与数据集构建软件 - ty-dzs00-03 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-03/1.0.0.mdx) - [探源科学卫星数据集档案库及管理软件 - ty-dzs00-04 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-04/1.0.0.mdx) - [探源科学卫星数据产品归档汇交服务软件 - ty-dzs00-05 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-05/1.0.0.mdx) - [探源科学卫星数据分级存储管理软件 - ty-dzs00-06 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-06/1.0.0.mdx) - [探源科学卫星数据备份与恢复软件 - ty-dzs00-07 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-07/1.0.0.mdx) - [探源科学卫星任务运行网统一门户软件 - ty-dzs00-08 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-08/1.0.0.mdx) - [探源科学卫星数据系统综合监管软件 - ty-dzs00-09 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-09/1.0.0.mdx) - [探源科学卫星日志管理与数据溯源软件 - ty-dzs00-10 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-10/1.0.0.mdx) - [科学卫星智能安全认证与权限管控软件 - ty-dzs00-11 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-11/1.0.0.mdx) - [探源科学卫星数据灾备与回迁软件 - ty-dzs00-12 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/services/ty-dzs00-12/1.0.0.mdx) 
+
+## Domains
+- [数据集0层数据流 - dateset-data-flow-0 - 1.0.0 ](https://eventcatalog.dzs-example.smoc.ac.cn/docs/domains/dateset-data-flow-0/1.0.0.mdx) - 用于抽象表征数据集构建与服务的数据流程
+
+
+## Flows
+
+
+## Channels
+
+
+## Containers (Databases, External Systems)
+
+
+## Entities
+
+
+## Teams
+
+
+## Users
