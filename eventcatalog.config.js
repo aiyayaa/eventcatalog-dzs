@@ -3,12 +3,13 @@
 const repoName = 'eventcatalog-dzs';
 const customDomain = 'eventcatalog.dzs-example.smoc.ac.cn';
 
-const repoUrl = process.env.GITHUB_PAGES === 'true' || process.env.GITHUB_ACTIONS === 'true'
-  ? process.env.GITHUB_REPOSITORY || ''
-  : '';
+const repoUrl =
+  process.env.GITHUB_PAGES === 'true' || process.env.GITHUB_ACTIONS === 'true'
+    ? process.env.GITHUB_REPOSITORY || ''
+    : '';
 
 const isRepoPagesPreview =
-  (process.env.USE_GITHUB_REPO_BASE === 'true') ||
+  process.env.USE_GITHUB_REPO_BASE === 'true' ||
   (repoUrl.endsWith(`/${repoName}`) && process.env.USE_CUSTOM_DOMAIN !== 'true');
 
 export default {
@@ -26,7 +27,7 @@ export default {
   },
   logo: {
     alt: 'DZS EventCatalog Logo',
-    src: isRepoPagesPreview ? `/${repoName}/logo.png` : '/logo.png',
+    src: '/logo.png',
     text: 'EventCatalog',
   },
   llmsTxt: {
