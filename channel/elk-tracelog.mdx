@@ -1,0 +1,39 @@
+---
+id: elk-tracelog
+name: 溯源日志收集
+version: 1.0.0
+summary: 溯源日志收集通道
+protocols:
+  - logstash‌
+---
+
+import { Accordion, AccordionItem, HeaderBadge, Math, ChannelHeader } from '@eventcatalog/components';
+
+<ChannelHeader />
+
+## 通道描述
+
+溯源日志收集通道，用于采集和传输系统调用链、审计追踪等溯源相关日志数据。
+
+## 协议信息
+
+- **协议类型**: Logstash
+- **数据流向**: 业务系统 → Logstash → 溯源分析平台
+
+## 使用场景
+
+- 全链路调用追踪
+- 安全审计与合规性检查
+- 故障根因分析
+
+## 消息格式示例
+
+```json
+{
+  "traceId": "abc123-def456",
+  "spanId": "span-001",
+  "operation": "GET /api/user",
+  "duration_ms": 45,
+  "userId": "10001",
+  "timestamp": "2026-04-22T10:00:00Z"
+}

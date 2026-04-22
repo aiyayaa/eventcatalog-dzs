@@ -1,0 +1,40 @@
+---
+id: elk-worklog
+name: 业务日志收集
+version: 1.0.0
+summary: 业务日志收集通道
+protocols:
+  - logstash‌
+---
+
+import { Accordion, AccordionItem, HeaderBadge, Math, ChannelHeader } from '@eventcatalog/components';
+
+<ChannelHeader />
+
+## 通道描述
+
+业务日志收集通道，用于采集和传输业务系统产生的各类操作日志、事件记录等。
+
+## 协议信息
+
+- **协议类型**: Logstash
+- **数据流向**: 业务应用 → Logstash → 日志存储/分析系统
+
+## 使用场景
+
+- 业务操作行为记录
+- 用户行为分析
+- 业务数据统计与报表
+
+## 消息格式示例
+
+```json
+{
+  "logLevel": "INFO",
+  "businessModule": "order",
+  "action": "createOrder",
+  "userId": "10001",
+  "orderId": "ORD-20260422-001",
+  "amount": 299.00,
+  "timestamp": "2026-04-22T10:00:00Z"
+}

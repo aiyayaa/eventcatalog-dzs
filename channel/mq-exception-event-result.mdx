@@ -1,0 +1,42 @@
+---
+id: mq-exception-event-result
+name: 综合监管异常事件处理结果反馈
+version: 1.0.0
+summary: 综合监管异常事件处理结果反馈通道
+protocols:
+  - kafka
+---
+
+import { Accordion, AccordionItem, HeaderBadge, Math, ChannelHeader } from '@eventcatalog/components';
+
+<ChannelHeader />
+
+## 通道描述
+
+综合监管异常事件处理结果反馈通道，用于将异常事件的处理结果通过消息队列反馈给相关监管系统或下游服务。
+
+## 协议信息
+
+- **协议类型**: Kafka
+- **数据流向**: 异常处理服务 → Kafka Topic → 监管/订阅系统
+
+## 使用场景
+
+- 监管异常事件闭环处理
+- 处理结果异步通知
+- 多系统间事件结果同步
+
+## 消息格式示例
+
+```json
+{
+  "eventId": "EXC-20260422-001",
+  "eventType": "TIMEOUT",
+  "handledBy": "auto-recovery",
+  "result": "resolved",
+  "handledAt": "2026-04-22T10:05:00Z",
+  "details": {
+    "action": "restart_service",
+    "affectedInstance": "user-service-01"
+  }
+}
