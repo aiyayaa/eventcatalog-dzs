@@ -1,34 +1,40 @@
 ---
-id: ty-dzs00-12
-name: 探源科学卫星数据灾备与回迁软件
-slug: ty-dzs00-12
-version: 1.0.0
-summary: ""
-
-sends:
-  - id: ty-dzs00-12-to-ty-dzs00-06-index-01
-    version: 1.0.0
-  
+id: "ty-dzs00-12"
+name: "探源科学卫星数据灾备与回迁软件"
+version: "1.0.0"
+summary: "探源科学卫星数据灾备与回迁软件。"
+visualiser: true
 receives:
-  - id: ty-dzs00-06-to-ty-dzs00-12-index-01
-    version: 1.0.0
-
-writesTo:
-  - id: ty-data-store-id-77
-    version: 1.0.0
-  - id: ty-data-store-db-id-22
-    version: 1.0.0
-  - id: ty-data-store-db-id-23
-    version: 1.0.0
-
-
+  -
+    id: "ty-dzs00-06-ty-dzs00-13-03"
+    version: "1.0.0"
 readsFrom:
-  - id: ty-data-store-id-76
-    version: 1.0.0
-  - id: ty-data-store-db-id-21
-    version: 1.0.0
-
-
+  -
+    id: "database-ty-dzs00-06-ty-dzs00-13-01"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-06-ty-dzs00-13-02"
+    version: "1.0.0"
+writesTo:
+  -
+    id: "database-ty-dzs00-13-ty-dzs00-06-01"
+    version: "1.0.0"
+  -
+    id: "database-ty-dzs00-13-ty-dzs00-06-03"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-13-ty-dzs00-06-04"
+    version: "1.0.0"
 ---
 
-# 探源科学卫星数据灾备与回迁软件
+## 概述
+
+探源科学卫星数据灾备与回迁软件。
+
+## 生成说明
+
+本页面由 `subsystem_interface_info` 表自动抽取生成。
+
+## 来源名称
+
+- 探源科学卫星数据灾备与回迁软件

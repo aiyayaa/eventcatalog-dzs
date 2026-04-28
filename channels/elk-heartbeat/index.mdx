@@ -1,34 +1,13 @@
 ---
-id: elk-heartbeat
-name: 心跳信息收集
-version: 1.0.0
-summary: 心跳信息收集通道
+id: "elk-heartbeat"
+name: "ELK 心跳信息通道"
+version: "1.0.0"
+summary: "用于采集、传输和检索系统心跳信息。"
+address: "elk/heartbeat"
 protocols:
-  - logstash‌
+  - "elasticsearch"
 ---
 
+## 概述
 
-## 通道描述
-
-心跳信息收集通道，用于接收和传输系统心跳监测数据。
-
-## 协议信息
-
-- **协议类型**: Logstash
-- **数据流向**: 服务实例 → Logstash → Elasticsearch
-
-## 使用场景
-
-- 服务健康状态监控
-- 心跳数据聚合与分析
-- 告警触发前置检测
-
-## 消息格式示例
-
-```json
-{
-  "service": "user-service",
-  "timestamp": "2026-04-22T10:00:00Z",
-  "status": "healthy",
-  "latency_ms": 12
-}
+用于表示系统心跳信息相关的 ELK 日志采集、检索与分析通道。

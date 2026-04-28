@@ -1,48 +1,68 @@
 ---
-id: ty-dzs00-07
-name: 探源科学卫星数据备份与恢复软件
-slug: ty-dzs00-07
-version: 1.0.0
-summary: ""
-
+id: "ty-dzs00-07"
+name: "探源科学卫星数据备份与恢复软件"
+version: "1.0.0"
+summary: "探源科学卫星数据备份与恢复软件。"
+visualiser: true
 sends:
-  - id: ty-dzs00-07-to-ty-dzs00-06-index-01
-    version: 1.0.0
-  - id: ty-dzs00-07-to-ty-dzs00-11-index-01
-    version: 1.0.0
-  - id: ty-dzs00-07-to-ty-dzs00-11-index-02
-    version: 1.0.0
-  - id: ty-dzs00-07-to-ty-dzs00-11-index-03
-    version: 1.0.0
-  
+  -
+    id: "ty-dzs00-07-ty-dzs00-06-05"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-07-ty-dzs00-11-01"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-07-ty-dzs00-11-02"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-07-ty-dzs00-11-03"
+    version: "1.0.0"
 receives:
-  - id: ty-dzs00-06-to-ty-dzs00-07-index-01
-    version: 1.0.0
-  - id: ty-dzs00-09-to-ty-dzs00-07-index-01
-    version: 1.0.0
-
-writesTo:
-  - id: ty-data-store-id-74
-    version: 1.0.0
-  - id: ty-data-store-id-75
-    version: 1.0.0
-  - id: ty-data-store-db-id-19
-    version: 1.0.0
-  - id: ty-data-store-db-id-20
-    version: 1.0.0
-  - id: ty-data-store-db-id-27
-    version: 1.0.0
-
+  -
+    id: "ty-dzs00-06-ty-dzs00-07-03"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-09-ty-dzs00-07-03"
+    version: "1.0.0"
 readsFrom:
-  - id: ty-data-store-id-72
-    version: 1.0.0
-  - id: ty-data-store-id-73
-    version: 1.0.0
-  - id: ty-data-store-db-id-18
-    version: 1.0.0
-  - id: ty-data-store-db-id-26
-    version: 1.0.0
-
+  -
+    id: "database-ty-dzs00-06-ty-dzs00-07-01"
+    version: "1.0.0"
+  -
+    id: "database-ty-dzs00-09-ty-dzs00-07-02"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-06-ty-dzs00-07-02"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-06-ty-dzs00-07-05"
+    version: "1.0.0"
+writesTo:
+  -
+    id: "database-ty-dzs00-07-ty-dzs00-06-01"
+    version: "1.0.0"
+  -
+    id: "database-ty-dzs00-07-ty-dzs00-06-03"
+    version: "1.0.0"
+  -
+    id: "database-ty-dzs00-07-ty-dzs00-09-01"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-07-ty-dzs00-06-04"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-07-ty-dzs00-06-06"
+    version: "1.0.0"
 ---
 
-# 探源科学卫星数据备份与恢复软件
+## 概述
+
+探源科学卫星数据备份与恢复软件。
+
+## 生成说明
+
+本页面由 `subsystem_interface_info` 表自动抽取生成。
+
+## 来源名称
+
+- 探源科学卫星数据备份与恢复软件

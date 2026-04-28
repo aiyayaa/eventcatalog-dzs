@@ -1,97 +1,149 @@
 ---
-id: ty-dzs00-01
-name: 探源科学卫星数据处理作业调度引擎软件
-slug: ty-dzs00-01
-version: 1.0.0
-summary: ""
-
+id: "ty-dzs00-01"
+name: "探源科学卫星数据处理作业调度引擎软件"
+version: "1.0.0"
+summary: "探源科学卫星数据处理作业调度引擎软件。"
+visualiser: true
 sends:
-  - id: ty-dzs00-01-to-ty-0x-dzs-03-index-01
-    version: 1.0.0
-  - id: ty-dzs00-01-to-ty-0x-dzs-03-index-02
-    version: 1.0.0
-  - id: ty-dzs00-01-to-ty-dzs00-02-index-01
-    version: 1.0.0
-  - id: ty-dzs00-01-to-ty-dzs00-11-index-01
-    version: 1.0.0
-  - id: ty-dzs00-01-to-ty-dzs00-11-index-02
-    version: 1.0.0
-  - id: ty-dzs00-01-to-ty-dzs00-11-index-03
-    version: 1.0.0
-
+  -
+    id: "ty-dzs00-01-ty-dzs00-02-01"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-01-ty-dzs00-11-01"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-01-ty-dzs00-11-02"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-01-ty-dzs00-11-03"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-01-ty-xx-dzs-03-01"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-01-ty-xx-dzs-03-02"
+    version: "1.0.0"
 receives:
-  - id: ty-0x-dzs-01-to-ty-dzs00-01-index-01
-    version: 1.0.0
-  - id: ty-dzs00-09-to-ty-dzs00-01-index-01
-    version: 1.0.0
-  - id: ty-dzs00-09-to-ty-dzs00-01-index-02
-    version: 1.0.0
-
-writesTo:
-  - id: ty-data-store-id-06
-    version: 1.0.0
-  - id: ty-data-store-id-07
-    version: 1.0.0
-  - id: ty-data-store-id-08
-    version: 1.0.0
-  - id: ty-data-store-id-09
-    version: 1.0.0
-  - id: ty-data-store-id-10
-    version: 1.0.0
-  - id: ty-data-store-id-11
-    version: 1.0.0
-  - id: ty-data-store-id-12
-    version: 1.0.0
-  - id: ty-data-store-id-18
-    version: 1.0.0
-  - id: ty-data-store-id-19
-    version: 1.0.0
-  - id: ty-data-store-id-20
-    version: 1.0.0
-  - id: ty-data-store-id-21
-    version: 1.0.0
-  - id: ty-data-store-id-24
-    version: 1.0.0
-  - id: ty-data-store-db-id-02
-    version: 1.0.0
-  - id: ty-data-store-db-id-05
-    version: 1.0.0
-
+  -
+    id: "ty-dzs00-08-ty-dzs00-01-01"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-09-ty-dzs00-01-03"
+    version: "1.0.0"
+  -
+    id: "ty-dzs00-09-ty-dzs00-01-04"
+    version: "1.0.0"
+  -
+    id: "ty-xx-dzs-01-ty-dzs00-01-01"
+    version: "1.0.0"
 readsFrom:
-  - id: ty-data-store-id-01
-    version: 1.0.0
-  - id: ty-data-store-id-02
-    version: 1.0.0
-  - id: ty-data-store-id-03
-    version: 1.0.0
-  - id: ty-data-store-id-04
-    version: 1.0.0
-  - id: ty-data-store-id-05
-    version: 1.0.0
-  - id: ty-data-store-id-13
-    version: 1.0.0
-  - id: ty-data-store-id-14
-    version: 1.0.0
-  - id: ty-data-store-id-15
-    version: 1.0.0
-  - id: ty-data-store-id-16
-    version: 1.0.0
-  - id: ty-data-store-id-17
-    version: 1.0.0
-  - id: ty-data-store-id-22
-    version: 1.0.0
-  - id: ty-data-store-id-23
-    version: 1.0.0
-  - id: ty-data-store-id-25
-    version: 1.0.0
-  - id: ty-data-store-id-26
-    version: 1.0.0
-  - id: ty-data-store-db-id-01
-    version: 1.0.0
-  - id: ty-data-store-db-id-03
-    version: 1.0.0
-  - id: ty-data-store-db-id-04
-    version: 1.0.0
+  -
+    id: "database-kx-dzs00-01-ty-dzs00-01-01"
+    version: "1.0.0"
+  -
+    id: "database-ty-dzs00-09-ty-dzs00-01-02"
+    version: "1.0.0"
+  -
+    id: "database-ty-xx-dzs-01-ty-dzs00-01-07"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-00-dzy-ty-dzs00-01-01"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-00-dzy-ty-dzs00-01-02"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-00-dzy-ty-dzs00-01-03"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-00-dzy-ty-dzs00-01-04"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-00-dzy-ty-dzs00-01-05"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-02-ty-dzs00-01-01"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-02-ty-dzs00-01-02"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-xx-dzs-01-ty-dzs00-01-02"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-xx-dzs-01-ty-dzs00-01-03"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-xx-dzs-01-ty-dzs00-01-04"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-xx-dzs-01-ty-dzs00-01-05"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-xx-dzs-01-ty-dzs00-01-06"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-xx-dzs-03-ty-dzs00-01-03"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-xx-dzs-03-ty-dzs00-01-04"
+    version: "1.0.0"
+writesTo:
+  -
+    id: "database-ty-dzs00-01-kxii-dzs00-01-01"
+    version: "1.0.0"
+  -
+    id: "database-ty-dzs00-01-ty-dzs00-09-01"
+    version: "1.0.0"
+  -
+    id: "database-ty-dzs00-01-ty-xx-dzs-01-06"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-00-dzy-01"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-01-01"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-01-02"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-01-03"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-01-04"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-01-05"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-01-07"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-02-01"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-02-02"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-02-03"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-02-04"
+    version: "1.0.0"
+  -
+    id: "objectstore-ty-dzs00-01-ty-xx-dzs-05-01"
+    version: "1.0.0"
 ---
 
-# 探源科学卫星数据处理作业调度引擎软件
+## 概述
+
+探源科学卫星数据处理作业调度引擎软件。
+
+## 生成说明
+
+本页面由 `subsystem_interface_info` 表自动抽取生成。
+
+## 来源名称
+
+- 探源科学卫星数据处理作业调度引擎软件
