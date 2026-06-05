@@ -1,37 +1,21 @@
-/** @type {import('@eventcatalog/core/bin/eventcatalog.config').Config} */
-
-const repoName = 'eventcatalog-dzs';
-const customDomain = 'eventcatalog.dzs-example.smoc.ac.cn';
-
-const repoUrl =
-  process.env.GITHUB_PAGES === 'true' || process.env.GITHUB_ACTIONS === 'true'
-    ? process.env.GITHUB_REPOSITORY || ''
-    : '';
-
-const isRepoPagesPreview =
-  process.env.USE_GITHUB_REPO_BASE === 'true' ||
-  (repoUrl.endsWith(`/${repoName}`) && process.env.USE_CUSTOM_DOMAIN !== 'true');
-
-export default {
-  title: 'EventCatalog',
-  tagline:
-    'DZS event-driven architecture catalog for domains, services, events, and message contracts.',
-  organizationName: 'DZS',
-  homepageLink: `https://${customDomain}/`,
-  editUrl: '',
+module.exports = {
+  cId: '5b7db671-40d3-4d6a-a8c2-dzs-eventcatalog',
+  title: '数据处理与研究支持分系统 EventCatalog',
+  tagline: '太空探源专项地面支撑系统数据处理与研究支持分系统接口目录',
+  organizationName: '中国科学院国家空间科学中心',
   output: 'static',
-  trailingSlash: false,
-  base: isRepoPagesPreview ? `/${repoName}/` : '/',
-  navigation: {
-    pages: ['list:top-level-domains', 'list:all'],
+  landingPage: '/visualiser',
+  docs: {
+    sidebar: {
+      type: 'TREE_VIEW',
+      showOrphanedMessages: true,
+    },
   },
-  logo: {
-    alt: 'DZS EventCatalog Logo',
-    src: '/logo.png',
-    text: 'EventCatalog',
+  visualiser: {
+    enabled: true,
+    channels: {
+      renderMode: 'flat',
+    },
   },
-  llmsTxt: {
-    enabled: false,
-  },
-  cId: 'f9255e6a-af97-41dc-9897-057e79f05245',
+  llmsTxt: { enabled: true },
 };

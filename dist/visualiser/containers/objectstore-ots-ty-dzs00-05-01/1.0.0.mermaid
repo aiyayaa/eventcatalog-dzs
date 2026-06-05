@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: containers/objectstore-ots-ty-dzs00-05-01 (v1.0.0)
+%% Generated: 2026-06-01T08:15:56.025Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    other_1_0_0[["其它项目系统 (1.0.0)"]]:::services
+    objectstore_ots_ty_dzs00_05_01_1_0_0[("辅助文件")]:::data
+    ty_dzs00_05_1_0_0[["探源科学卫星数据产品归档汇交服务软件 (1.0.0)"]]:::services
+
+    %% Edges
+    other_1_0_0 -->|"writes to"| objectstore_ots_ty_dzs00_05_01_1_0_0
+    objectstore_ots_ty_dzs00_05_01_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0

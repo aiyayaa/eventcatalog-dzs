@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: containers/objectstore-ty-00-dzy-ty-dzs00-01-05 (v1.0.0)
+%% Generated: 2026-06-01T08:15:56.267Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    dzy_1_0_0[["任务运控与决策支持分系统 (1.0.0)"]]:::services
+    objectstore_ty_00_dzy_ty_dzs00_01_05_1_0_0[("数据传输完成通知（实时数传原始数据、事后数传原始数据、遥测原始数据、探路者一号A星高速遥测数据）")]:::data
+    ty_dzs00_01_1_0_0[["探源科学卫星数据处理作业调度引擎软件 (1.0.0)"]]:::services
+
+    %% Edges
+    dzy_1_0_0 -->|"writes to"| objectstore_ty_00_dzy_ty_dzs00_01_05_1_0_0
+    objectstore_ty_00_dzy_ty_dzs00_01_05_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_01_1_0_0

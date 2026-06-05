@@ -1,0 +1,55 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: services/ty-dzs00-07 (v1.0.0)
+%% Generated: 2026-06-01T08:15:54.113Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef commands fill:#3b82f6,stroke:#1d4ed8,color:#fff
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    ty_dzs00_06_ty_dzs00_07_03_1_0_0>"数据实体恢复 (1.0.0)"]:::commands
+    ty_dzs00_07_1_0_0[["探源科学卫星数据备份与恢复软件 (1.0.0)"]]:::services
+    ty_dzs00_06_1_0_0[["探源科学卫星数据分级存储管理软件 (1.0.0)"]]:::services
+    ty_dzs00_09_ty_dzs00_07_03_1_0_0>"库表创建 (1.0.0)"]:::commands
+    ty_dzs00_09_1_0_0[["探源科学卫星数据系统综合监管软件 (1.0.0)"]]:::services
+    ty_dzs00_07_1_0_0[["探源科学卫星数据备份与恢复软件 (1.0.0)"]]:::services
+    database_ty_dzs00_07_ty_dzs00_06_01_1_0_0[("数据实体备份信息")]:::data
+    database_ty_dzs00_07_ty_dzs00_06_03_1_0_0[("数据实体恢复状态信息")]:::data
+    database_ty_dzs00_07_ty_dzs00_09_01_1_0_0[("数据检索请求（系统参数）")]:::data
+    objectstore_ty_dzs00_07_ty_dzs00_06_04_1_0_0[("数据实体")]:::data
+    objectstore_ty_dzs00_07_ty_dzs00_06_06_1_0_0[("数据实体存储清单")]:::data
+    database_ty_dzs00_06_ty_dzs00_07_01_1_0_0[("数据实体信息")]:::data
+    database_ty_dzs00_09_ty_dzs00_07_02_1_0_0[("数据检索请求反馈（系统参数）")]:::data
+    objectstore_ty_dzs00_06_ty_dzs00_07_02_1_0_0[("数据实体")]:::data
+    objectstore_ty_dzs00_06_ty_dzs00_07_05_1_0_0[("数据实体存储结果清单")]:::data
+    ty_dzs00_07_ty_dzs00_06_05_1_0_0>"数据实体存储 (1.0.0)"]:::commands
+    ty_dzs00_07_ty_dzs00_11_01_1_0_0>"用户登录认证接口 (1.0.0)"]:::commands
+    ty_dzs00_11_1_0_0[["探源科学卫星智能安全认证与权限管控软件 (1.0.0)"]]:::services
+    ty_dzs00_07_ty_dzs00_11_02_1_0_0>"用户注销认证接口 (1.0.0)"]:::commands
+    ty_dzs00_07_ty_dzs00_11_03_1_0_0>"用户鉴权接口 (1.0.0)"]:::commands
+
+    %% Edges
+    ty_dzs00_06_1_0_0 -->|"invokes"| ty_dzs00_06_ty_dzs00_07_03_1_0_0
+    ty_dzs00_06_ty_dzs00_07_03_1_0_0 -->|"accepts"| ty_dzs00_07_1_0_0
+    ty_dzs00_09_1_0_0 -->|"invokes"| ty_dzs00_09_ty_dzs00_07_03_1_0_0
+    ty_dzs00_09_ty_dzs00_07_03_1_0_0 -->|"accepts"| ty_dzs00_07_1_0_0
+    ty_dzs00_07_1_0_0 -->|"writes to   (database)"| database_ty_dzs00_07_ty_dzs00_06_01_1_0_0
+    ty_dzs00_07_1_0_0 -->|"writes to   (database)"| database_ty_dzs00_07_ty_dzs00_06_03_1_0_0
+    ty_dzs00_07_1_0_0 -->|"writes to   (database)"| database_ty_dzs00_07_ty_dzs00_09_01_1_0_0
+    ty_dzs00_07_1_0_0 -->|"writes to   (shared-storage)"| objectstore_ty_dzs00_07_ty_dzs00_06_04_1_0_0
+    ty_dzs00_07_1_0_0 -->|"writes to   (shared-storage)"| objectstore_ty_dzs00_07_ty_dzs00_06_06_1_0_0
+    database_ty_dzs00_06_ty_dzs00_07_01_1_0_0 -->|"reads from   (database)"| ty_dzs00_07_1_0_0
+    database_ty_dzs00_09_ty_dzs00_07_02_1_0_0 -->|"reads from   (database)"| ty_dzs00_07_1_0_0
+    objectstore_ty_dzs00_06_ty_dzs00_07_02_1_0_0 -->|"reads from   (shared-storage)"| ty_dzs00_07_1_0_0
+    objectstore_ty_dzs00_06_ty_dzs00_07_05_1_0_0 -->|"reads from   (shared-storage)"| ty_dzs00_07_1_0_0
+    ty_dzs00_07_1_0_0 -->|"invokes"| ty_dzs00_07_ty_dzs00_06_05_1_0_0
+    ty_dzs00_07_ty_dzs00_06_05_1_0_0 -->|"accepts"| ty_dzs00_06_1_0_0
+    ty_dzs00_07_1_0_0 -->|"invokes"| ty_dzs00_07_ty_dzs00_11_01_1_0_0
+    ty_dzs00_07_ty_dzs00_11_01_1_0_0 -->|"accepts"| ty_dzs00_11_1_0_0
+    ty_dzs00_07_1_0_0 -->|"invokes"| ty_dzs00_07_ty_dzs00_11_02_1_0_0
+    ty_dzs00_07_ty_dzs00_11_02_1_0_0 -->|"accepts"| ty_dzs00_11_1_0_0
+    ty_dzs00_07_1_0_0 -->|"invokes"| ty_dzs00_07_ty_dzs00_11_03_1_0_0
+    ty_dzs00_07_ty_dzs00_11_03_1_0_0 -->|"accepts"| ty_dzs00_11_1_0_0

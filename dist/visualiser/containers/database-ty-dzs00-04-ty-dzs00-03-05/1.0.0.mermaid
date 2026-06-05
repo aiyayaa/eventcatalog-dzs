@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: containers/database-ty-dzs00-04-ty-dzs00-03-05 (v1.0.0)
+%% Generated: 2026-06-01T08:15:55.958Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    ty_dzs00_04_1_0_0[["探源科学卫星数据集档案库及管理软件 (1.0.0)"]]:::services
+    database_ty_dzs00_04_ty_dzs00_03_05_1_0_0[("词表数据")]:::data
+    ty_dzs00_03_1_0_0[["探源科学卫星元数据编审与数据集构建软件 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_dzs00_04_1_0_0 -->|"writes to"| database_ty_dzs00_04_ty_dzs00_03_05_1_0_0
+    database_ty_dzs00_04_ty_dzs00_03_05_1_0_0 -->|"reads from   (database)"| ty_dzs00_03_1_0_0

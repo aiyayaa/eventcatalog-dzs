@@ -1,0 +1,32 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: services/sas (v1.0.0)
+%% Generated: 2026-06-01T08:15:53.918Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    sas_1_0_0[["科学应用系统 (1.0.0)"]]:::services
+    objectstore_kytxx_ty_dzs00_05_01_1_0_0[("辅助文件")]:::data
+    objectstore_kytxx_ty_dzs00_05_02_1_0_0[("核心元数据")]:::data
+    objectstore_kytxx_ty_dzs00_05_03_1_0_0[("学科元数据")]:::data
+    objectstore_kytxx_ty_dzs00_05_04_1_0_0[("标定级数据产品")]:::data
+    objectstore_kytxx_ty_dzs00_05_05_1_0_0[("归档数据清单")]:::data
+    objectstore_ty_xx_dzs_04_psc_01_1_0_0[("编辑级数据产品")]:::data
+    objectstore_ty_xx_dzs_04_psc_02_1_0_0[("辅助数据产品")]:::data
+    objectstore_ty_xx_dzs_04_psc_03_1_0_0[("空间环境数据")]:::data
+    objectstore_ty_xx_dzs_04_psc_04_1_0_0[("数据产品分发清单（编辑级数据产品、辅助数据产品、空间环境数据）")]:::data
+
+    %% Edges
+    sas_1_0_0 -->|"writes to   (file-share)"| objectstore_kytxx_ty_dzs00_05_01_1_0_0
+    sas_1_0_0 -->|"writes to   (file-share)"| objectstore_kytxx_ty_dzs00_05_02_1_0_0
+    sas_1_0_0 -->|"writes to   (file-share)"| objectstore_kytxx_ty_dzs00_05_03_1_0_0
+    sas_1_0_0 -->|"writes to   (file-share)"| objectstore_kytxx_ty_dzs00_05_04_1_0_0
+    sas_1_0_0 -->|"writes to   (file-share)"| objectstore_kytxx_ty_dzs00_05_05_1_0_0
+    objectstore_ty_xx_dzs_04_psc_01_1_0_0 -->|"reads from   (file-share)"| sas_1_0_0
+    objectstore_ty_xx_dzs_04_psc_02_1_0_0 -->|"reads from   (file-share)"| sas_1_0_0
+    objectstore_ty_xx_dzs_04_psc_03_1_0_0 -->|"reads from   (file-share)"| sas_1_0_0
+    objectstore_ty_xx_dzs_04_psc_04_1_0_0 -->|"reads from   (file-share)"| sas_1_0_0

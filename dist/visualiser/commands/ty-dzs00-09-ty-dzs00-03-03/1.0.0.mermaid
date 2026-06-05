@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: commands/ty-dzs00-09-ty-dzs00-03-03 (v1.0.0)
+%% Generated: 2026-06-01T08:15:53.038Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef commands fill:#3b82f6,stroke:#1d4ed8,color:#fff
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+
+    %% Nodes
+    ty_dzs00_09_ty_dzs00_03_03_1_0_0>"库表创建 (1.0.0)"]:::commands
+    ty_dzs00_09_1_0_0[["探源科学卫星数据系统综合监管软件 (1.0.0)"]]:::services
+    ty_dzs00_03_1_0_0[["探源科学卫星元数据编审与数据集构建软件 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_dzs00_09_1_0_0 -->|"invokes"| ty_dzs00_09_ty_dzs00_03_03_1_0_0
+    ty_dzs00_09_ty_dzs00_03_03_1_0_0 -->|"accepts"| ty_dzs00_03_1_0_0

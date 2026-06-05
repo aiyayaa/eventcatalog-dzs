@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: containers/objectstore-ty-dzs00-04-ty-00-dzy-04 (v1.0.0)
+%% Generated: 2026-06-01T08:15:56.245Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    ty_dzs00_04_1_0_0[["探源科学卫星数据集档案库及管理软件 (1.0.0)"]]:::services
+    objectstore_ty_dzs00_04_ty_00_dzy_04_1_0_0[("数据出库完成通知")]:::data
+    dzy_1_0_0[["任务运控与决策支持分系统 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_dzs00_04_1_0_0 -->|"writes to"| objectstore_ty_dzs00_04_ty_00_dzy_04_1_0_0
+    objectstore_ty_dzs00_04_ty_00_dzy_04_1_0_0 -->|"reads from   (file-share)"| dzy_1_0_0

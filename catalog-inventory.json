@@ -1,0 +1,5712 @@
+{
+  "generatedAt": "2026-06-02T01:22:24.092Z",
+  "language": "zh-CN",
+  "sourceFiles": [
+    "接口控制文件.md",
+    "数据规范说明.md",
+    "日志规范.md",
+    "地支接口控制文件.md",
+    "地支数据规范.md"
+  ],
+  "cleaningRules": {
+    "TY-DZS00-13": "TY-DZS00-12",
+    "OTS__TY-DZS00-08_01": "OTS_TY-DZS00-08_01",
+    "KX-DZS00-01": "KXII-DZS00-01",
+    "数据规范说明版本": "TY-DZS-JK00-02-1.20",
+    "TBD/TBC": "badge:TBD"
+  },
+  "counts": {
+    "rawRows": 714,
+    "uniqueInterfaces": 385,
+    "duplicateRows": 329,
+    "services": 39,
+    "commands": 385,
+    "channels": 9,
+    "containers": 73,
+    "tbd": 51
+  },
+  "services": [
+    {
+      "id": "ty-dzs00-01",
+      "code": "TY-DZS00-01",
+      "name": "探源科学卫星数据处理作业调度引擎软件",
+      "sends": 27,
+      "receives": 28
+    },
+    {
+      "id": "ty-dzs00-02",
+      "code": "TY-DZS00-02",
+      "name": "探源科学卫星公共信息库管理软件",
+      "sends": 20,
+      "receives": 13
+    },
+    {
+      "id": "ty-dzs00-03",
+      "code": "TY-DZS00-03",
+      "name": "探源科学卫星元数据编审与数据集构建软件",
+      "sends": 22,
+      "receives": 22
+    },
+    {
+      "id": "ty-dzs00-04",
+      "code": "TY-DZS00-04",
+      "name": "探源科学卫星数据集档案库及管理软件",
+      "sends": 31,
+      "receives": 24
+    },
+    {
+      "id": "ty-dzs00-05",
+      "code": "TY-DZS00-05",
+      "name": "探源科学卫星数据产品归档汇交服务软件",
+      "sends": 21,
+      "receives": 32
+    },
+    {
+      "id": "ty-dzs00-06",
+      "code": "TY-DZS00-06",
+      "name": "探源科学卫星数据分级存储管理软件",
+      "sends": 30,
+      "receives": 26
+    },
+    {
+      "id": "ty-dzs00-07",
+      "code": "TY-DZS00-07",
+      "name": "探源科学卫星数据备份与恢复软件",
+      "sends": 14,
+      "receives": 11
+    },
+    {
+      "id": "ty-dzs00-08",
+      "code": "TY-DZS00-08",
+      "name": "探源科学卫星任务运行网统一门户软件",
+      "sends": 11,
+      "receives": 12
+    },
+    {
+      "id": "ty-dzs00-09",
+      "code": "TY-DZS00-09",
+      "name": "探源科学卫星数据系统综合监管软件",
+      "sends": 47,
+      "receives": 32
+    },
+    {
+      "id": "ty-dzs00-10",
+      "code": "TY-DZS00-10",
+      "name": "探源科学卫星日志管理与数据溯源软件",
+      "sends": 6,
+      "receives": 48
+    },
+    {
+      "id": "ty-dzs00-11",
+      "code": "TY-DZS00-11",
+      "name": "探源科学卫星智能安全认证与权限管控软件",
+      "sends": 44,
+      "receives": 42
+    },
+    {
+      "id": "ty-dzs00-12",
+      "code": "TY-DZS00-12",
+      "name": "探源科学卫星数据灾备与回迁软件",
+      "sends": 4,
+      "receives": 3
+    },
+    {
+      "id": "ty-00-dzs-01",
+      "code": "TY-00-DZS-01",
+      "name": "探路者一号卫星数据预处理与产品生成软件",
+      "sends": 9,
+      "receives": 7
+    },
+    {
+      "id": "ty-00-dzs-02",
+      "code": "TY-00-DZS-02",
+      "name": "探路者一号卫星数据产品规范化审核与完整性判读软件",
+      "sends": 17,
+      "receives": 13
+    },
+    {
+      "id": "ty-00-dzs-03",
+      "code": "TY-00-DZS-03",
+      "name": "探路者一号卫星任务数据库及管理软件",
+      "sends": 24,
+      "receives": 29
+    },
+    {
+      "id": "ty-00-dzs-04",
+      "code": "TY-00-DZS-04",
+      "name": "探路者一号卫星数据产品订阅与分发服务软件",
+      "sends": 13,
+      "receives": 12
+    },
+    {
+      "id": "ty-00-dzs-05",
+      "code": "TY-00-DZS-05",
+      "name": "探路者一号卫星数据可视化与产品发布网站",
+      "sends": 13,
+      "receives": 14
+    },
+    {
+      "id": "ty-00-dzy",
+      "code": "TY-00-DZY",
+      "name": "任务运控与决策支持分系统",
+      "sends": 14,
+      "receives": 10
+    },
+    {
+      "id": "dzy",
+      "code": "DZY",
+      "name": "任务运控与决策支持分系统",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "dzt",
+      "code": "DZT",
+      "name": "星地通信分系统",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "dzz",
+      "code": "DZZ",
+      "name": "总体技术分系统",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "dzs",
+      "code": "DZS",
+      "name": "数据处理与研究支持分系统",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "gz",
+      "code": "GZ",
+      "name": "科学用户",
+      "sends": 0,
+      "receives": 2
+    },
+    {
+      "id": "psc00",
+      "code": "PSC00",
+      "name": "技术试验卫星（探路者一号）载荷团队",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "psc",
+      "code": "PSC",
+      "name": "载荷应用系统",
+      "sends": 0,
+      "receives": 4
+    },
+    {
+      "id": "wxt00",
+      "code": "WXT00",
+      "name": "技术试验卫星（探路者一号）卫星系统",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "sat",
+      "code": "SAT",
+      "name": "卫星系统",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "sepc",
+      "code": "SEPC",
+      "name": "空间环境预报中心",
+      "sends": 1,
+      "receives": 0
+    },
+    {
+      "id": "ots",
+      "code": "OTS",
+      "name": "其它项目系统",
+      "sends": 11,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-01",
+      "code": "KXII-DZS00-01",
+      "name": "卫星数据处理作业管理软件配置项（先导二期）",
+      "sends": 1,
+      "receives": 1
+    },
+    {
+      "id": "kxii-dzs00-02",
+      "code": "KXII-DZS00-02",
+      "name": "科学档案管理软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-03",
+      "code": "KXII-DZS00-03",
+      "name": "数据存储与灾备软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-04",
+      "code": "KXII-DZS00-04",
+      "name": "业务调度与综合监管软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-05",
+      "code": "KXII-DZS00-05",
+      "name": "计算资源调度服务引擎软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-06",
+      "code": "KXII-DZS00-06",
+      "name": "用户管理与安全审计软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-07",
+      "code": "KXII-DZS00-07",
+      "name": "科学档案发布软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-08",
+      "code": "KXII-DZS00-08",
+      "name": "任务运行网PaaS服务软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kxii-dzs00-09",
+      "code": "KXII-DZS00-09",
+      "name": "系统测试验证软件配置项（先导二期）",
+      "sends": 0,
+      "receives": 0
+    },
+    {
+      "id": "kytxx",
+      "code": "KYTXX",
+      "name": "科学应用系统/载荷团队",
+      "sends": 5,
+      "receives": 0
+    }
+  ],
+  "commands": [
+    {
+      "id": "kxii-dzs00-01-ty-dzs00-01-01",
+      "interfaceId": "KXII-DZS00-01_TY-DZS00-01_01",
+      "name": "任务信息查询结果",
+      "producer": "kxii-dzs00-01",
+      "consumer": "ty-dzs00-01",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-kxii-dzs00-01-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "kytxx-ty-dzs00-05-01",
+      "interfaceId": "KYTXX_TY-DZS00-05_01",
+      "name": "辅助文件",
+      "producer": "kytxx",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-kytxx-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "kytxx-ty-dzs00-05-02",
+      "interfaceId": "KYTXX_TY-DZS00-05_02",
+      "name": "核心元数据",
+      "producer": "kytxx",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-kytxx-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "kytxx-ty-dzs00-05-03",
+      "interfaceId": "KYTXX_TY-DZS00-05_03",
+      "name": "学科元数据",
+      "producer": "kytxx",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-kytxx-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "kytxx-ty-dzs00-05-04",
+      "interfaceId": "KYTXX_TY-DZS00-05_04",
+      "name": "标定级数据产品",
+      "producer": "kytxx",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-kytxx-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "kytxx-ty-dzs00-05-05",
+      "interfaceId": "KYTXX_TY-DZS00-05_05",
+      "name": "归档数据清单",
+      "producer": "kytxx",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-kytxx-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-01",
+      "interfaceId": "OTS_TY-DZS00-05_01",
+      "name": "辅助文件",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-02",
+      "interfaceId": "OTS_TY-DZS00-05_02",
+      "name": "核心元数据",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-03",
+      "interfaceId": "OTS_TY-DZS00-05_03",
+      "name": "学科元数据",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-04",
+      "interfaceId": "OTS_TY-DZS00-05_04",
+      "name": "数据产品（先导原始、先导编辑级、先导标定级、其它项目）",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-05",
+      "interfaceId": "OTS_TY-DZS00-05_05",
+      "name": "运控归档数据（先导）",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-06",
+      "interfaceId": "OTS_TY-DZS00-05_06",
+      "name": "归档数据清单（探源） （先导原始、先导编辑级）",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.3",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-07",
+      "interfaceId": "OTS_TY-DZS00-05_07",
+      "name": "归档数据清单（探源） （HXMT标定级、DAMPE标定级）",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.3",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-08",
+      "interfaceId": "OTS_TY-DZS00-05_08",
+      "name": "归档数据清单（先导） （EP标定级、SVOM标定级、SMILE标定级）",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.3",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-05-09",
+      "interfaceId": "OTS_TY-DZS00-05_09",
+      "name": "数据汇交清单（先导） （GECAM标定级、ASO-S标定级）",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.1（GECAM） 3.1.2（ASO-S）",
+      "transport": null
+    },
+    {
+      "id": "ots-ty-dzs00-05-10",
+      "interfaceId": "OTS_TY-DZS00-05_10",
+      "name": "运控归档文件传输完成通知（先导）",
+      "producer": "ots",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ots-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ots-ty-dzs00-08-01",
+      "interfaceId": "OTS_TY-DZS00-08_01",
+      "name": "先导业务页面",
+      "producer": "ots",
+      "consumer": "ty-dzs00-08",
+      "method": "页面集成",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "channel",
+        "id": "web-page-ots-ty-dzs00-08"
+      }
+    },
+    {
+      "id": "sepc-ty-dzs00-02-01",
+      "interfaceId": "SEPC_TY-DZS00-02_01",
+      "name": "空间环境数据",
+      "producer": "sepc",
+      "consumer": "ty-dzs00-02",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-sepc-ty-dzs00-02"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-01-01",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-01_01",
+      "name": "任务状态信息（预处理）",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.21",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-01-02",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-01_02",
+      "name": "任务完成通知（预处理）",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.38",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-01-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-01-03",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-01_03",
+      "name": "编辑级数据产品",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-01-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-01-04",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-01_04",
+      "name": "事后数传数据质量信息",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-01-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-01-05",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-01_05",
+      "name": "辅助数据产品",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-01-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-01-06",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-01_06",
+      "name": "快视数据",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-01-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-01-07",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-01_07",
+      "name": "产品版本信息查询请求",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-01",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-00-dzs-01-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-10-01",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-01-ty-dzs00-10-02",
+      "interfaceId": "TY-00-DZS-01_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-00-dzs-01",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-00-dzs-04-01",
+      "interfaceId": "TY-00-DZS-02_TY-00-DZS-04_01",
+      "name": "编辑级数据产品",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-00-dzs-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-00-dzs-04"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-00-dzs-04-02",
+      "interfaceId": "TY-00-DZS-02_TY-00-DZS-04_02",
+      "name": "辅助数据产品",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-00-dzs-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-00-dzs-04"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-00-dzs-04-03",
+      "interfaceId": "TY-00-DZS-02_TY-00-DZS-04_03",
+      "name": "数据产品分发请求（编辑级数据产品、辅助数据产品）",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-00-dzs-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.35",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-00-dzs-04"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-05-01",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-05_01",
+      "name": "任务完成通知（标定级产品审核）",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.5",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-05-02",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-05_02",
+      "name": "数据判读结果",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.6",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-05-03",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-05_03",
+      "name": "原始数据产品",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-05-04",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-05_04",
+      "name": "编辑级数据产品",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-05-05",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-05_05",
+      "name": "辅助数据产品",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-05-06",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-05_06",
+      "name": "归档数据清单（原始、编辑级、辅助数据产品）",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.3",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-02-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-09-01",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-00-dzs-02-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-09-02",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-10-01",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-10-02",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-10-03",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-11-01",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-11-02",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-02-ty-dzs00-11-03",
+      "interfaceId": "TY-00-DZS-02_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-00-dzs-02",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-01-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-01_01",
+      "name": "数据检索请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.11",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-01-02",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-01_02",
+      "name": "数据获取请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.13",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-01-03",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-01_03",
+      "name": "数据文件",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-03-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-01-04",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-01_04",
+      "name": "数据出库完成通知",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.25",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-03-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-02-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-02_01",
+      "name": "数据检索请求反馈（产品统计信息）",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.11",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-03-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-03_01",
+      "name": "数据检索请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.11",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-03-02",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-03_02",
+      "name": "数据获取请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.13",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-03-03",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-03_03",
+      "name": "数据文件清单（辅助文件、批次汇交数据文件）",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.14",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-03-ty-dzs00-03"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-03-04",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-03_04",
+      "name": "库表信息检索请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.29",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-03-05",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-03_05",
+      "name": "元数据文件检索请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.27",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-03-06",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-03_06",
+      "name": "数据文件检索请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.45",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-05-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-05_01",
+      "name": "数据文件入库清单结果反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.9",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-03-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-06-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-06_01",
+      "name": "数据实体存储请求",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.15",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-06-02",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-06_02",
+      "name": "数据实体",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-06",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-03-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-06-03",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-06_03",
+      "name": "数据实体获取请求",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.19",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-06-04",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-06_04",
+      "name": "数据实体存储清单",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-06",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.16",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-03-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-09-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-00-dzs-03-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-09-02",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-10-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-10-02",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-10-03",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-11-01",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-11-02",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-03-ty-dzs00-11-03",
+      "interfaceId": "TY-00-DZS-03_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-00-dzs-03",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-04-psc-01",
+      "interfaceId": "TY-00-DZS-04_PSC_01",
+      "name": "编辑级数据产品",
+      "producer": "ty-00-dzs-04",
+      "consumer": "psc",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-04-psc"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-psc-02",
+      "interfaceId": "TY-00-DZS-04_PSC_02",
+      "name": "辅助数据产品",
+      "producer": "ty-00-dzs-04",
+      "consumer": "psc",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-04-psc"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-psc-03",
+      "interfaceId": "TY-00-DZS-04_PSC_03",
+      "name": "空间环境数据",
+      "producer": "ty-00-dzs-04",
+      "consumer": "psc",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "与环境预报中心接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-04-psc"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-psc-04",
+      "interfaceId": "TY-00-DZS-04_PSC_04",
+      "name": "数据产品分发清单（编辑级数据产品、辅助数据产品、空间环境数据）",
+      "producer": "ty-00-dzs-04",
+      "consumer": "psc",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzs-04-psc"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-08-01",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-08_01",
+      "name": "分发信息获取结果",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-09-01",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-00-dzs-04-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-09-02",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-10-01",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-10-02",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-10-03",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-11-01",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-11-02",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-04-ty-dzs00-11-03",
+      "interfaceId": "TY-00-DZS-04_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-00-dzs-04",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-gz-01",
+      "interfaceId": "TY-00-DZS-05_GZ_01",
+      "name": "数据产品",
+      "producer": "ty-00-dzs-05",
+      "consumer": "gz",
+      "method": "页面集成",
+      "exchange": "消息",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "channel",
+        "id": "web-page-ty-00-dzs-05-gz"
+      }
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-04-01",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-04_01",
+      "name": "数据检索请求",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.10",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-04-02",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-04_02",
+      "name": "数据获取请求",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.12",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-04-03",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-04_03",
+      "name": "元数据转换信息检索请求",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.40",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-04-04",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-04_04",
+      "name": "元数据文件获取请求",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.42",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-09-01",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-00-dzs-05-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-09-02",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-10-01",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-10-02",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-10-03",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-11-01",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-11-02",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzs-05-ty-dzs00-11-03",
+      "interfaceId": "TY-00-DZS-05_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-00-dzs-05",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-01-01",
+      "interfaceId": "TY-00-DZY_TY-DZS00-01_01",
+      "name": "实时数传原始数据",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzy-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-01-02",
+      "interfaceId": "TY-00-DZY_TY-DZS00-01_02",
+      "name": "事后数传原始数据",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzy-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-01-03",
+      "interfaceId": "TY-00-DZY_TY-DZS00-01_03",
+      "name": "遥测原始数据",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzy-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-01-04",
+      "interfaceId": "TY-00-DZY_TY-DZS00-01_04",
+      "name": "探路者一号A星高速遥测数据",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzy-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-01-05",
+      "interfaceId": "TY-00-DZY_TY-DZS00-01_05",
+      "name": "数据传输完成通知（实时数传原始数据、事后数传原始数据、遥测原始数据、探路者一号A星高速遥测数据）",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzy-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-02-01",
+      "interfaceId": "TY-00-DZY_TY-DZS00-02_01",
+      "name": "卫星任务信息（轨道数据、计划等）",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-02",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-00-dzy-ty-dzs00-02"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-02-02",
+      "interfaceId": "TY-00-DZY_TY-DZS00-02_02",
+      "name": "数据检索请求",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-02-03",
+      "interfaceId": "TY-00-DZY_TY-DZS00-02_03",
+      "name": "数据实体入库请求",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-02-04",
+      "interfaceId": "TY-00-DZY_TY-DZS00-02_04",
+      "name": "数据获取请求",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-04-01",
+      "interfaceId": "TY-00-DZY_TY-DZS00-04_01",
+      "name": "数据检索请求",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-04-02",
+      "interfaceId": "TY-00-DZY_TY-DZS00-04_02",
+      "name": "数据获取请求",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-05-01",
+      "interfaceId": "TY-00-DZY_TY-DZS00-05_01",
+      "name": "运控归档数据",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzy-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-05-02",
+      "interfaceId": "TY-00-DZY_TY-DZS00-05_02",
+      "name": "运控归档文件传输完成通知",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-00-dzy-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-00-dzy-ty-dzs00-08-01",
+      "interfaceId": "TY-00-DZY_TY-DZS00-08_01",
+      "name": "运控业务页面",
+      "producer": "ty-00-dzy",
+      "consumer": "ty-dzs00-08",
+      "method": "页面集成",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "channel",
+        "id": "web-page-ty-00-dzy-ty-dzs00-08"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-kxii-dzs00-01-01",
+      "interfaceId": "TY-DZS00-01_KXII-DZS00-01_01",
+      "name": "任务信息查询请求",
+      "producer": "ty-dzs00-01",
+      "consumer": "kxii-dzs00-01",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-01-kxii-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-01-01",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-01_01",
+      "name": "任务订单（预处理）",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.37",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-01-02",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-01_02",
+      "name": "数传原始数据",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-01",
+      "method": "文件共享/数据流",
+      "exchange": "文件/数据流",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "channel",
+        "id": "file-stream-ty-dzs00-01-ty-00-dzs-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-01-03",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-01_03",
+      "name": "遥测原始数据",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-01",
+      "method": "文件共享/数据流",
+      "exchange": "文件/数据流",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "channel",
+        "id": "file-stream-ty-dzs00-01-ty-00-dzs-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-01-04",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-01_04",
+      "name": "辅助数据（OI、OL、OA、TE、OEM）",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-01-05",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-01_05",
+      "name": "编辑级数据产品",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-01-06",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-01_06",
+      "name": "产品版本信息查询结果",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-01",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-01-ty-00-dzs-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-01-07",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-01_07",
+      "name": "探路者一号A星高速遥测数据",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-02-01",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-02_01",
+      "name": "原始数据产品",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-02",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-02-02",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-02_02",
+      "name": "编辑级数据产品",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-02",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-02-03",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-02_03",
+      "name": "辅助数据产品",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-02",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-02-04",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-02_04",
+      "name": "数据同步清单（原始数据产品、编辑级数据产品、辅助数据产品）",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-02",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.39",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-03-01",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-03_01",
+      "name": "数据检索请求",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.10",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-03-02",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-03_02",
+      "name": "数据获取请求",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.12",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzs-05-01",
+      "interfaceId": "TY-DZS00-01_TY-00-DZS-05_01",
+      "name": "快视数据",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzs-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzs-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-00-dzy-01",
+      "interfaceId": "TY-DZS00-01_TY-00-DZY_01",
+      "name": "事后数传数据质量信息",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-00-dzy",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-01-ty-00-dzy"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-02-01",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-02_01",
+      "name": "数据检索请求",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.10",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-08-01",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-08_01",
+      "name": "质量信息获取结果",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-01-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-09-03",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-09_03",
+      "name": "质量信息获取结果",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-01-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-01_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-01",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzs-03-01",
+      "interfaceId": "TY-DZS00-02_TY-00-DZS-03_01",
+      "name": "数据检索请求（产品统计信息）",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.10",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzs-04-01",
+      "interfaceId": "TY-DZS00-02_TY-00-DZS-04_01",
+      "name": "空间环境数据",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzs-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "与环境预报中心接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-02-ty-00-dzs-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzs-04-02",
+      "interfaceId": "TY-DZS00-02_TY-00-DZS-04_02",
+      "name": "数据产品分发请求（空间环境数据，一个获取批次一个）",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzs-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.47",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-02-ty-00-dzs-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzy-01",
+      "interfaceId": "TY-DZS00-02_TY-00-DZY_01",
+      "name": "数据检索请求反馈",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzy",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzy-02",
+      "interfaceId": "TY-DZS00-02_TY-00-DZY_02",
+      "name": "数据实体入库请求反馈",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzy",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzy-03",
+      "interfaceId": "TY-DZS00-02_TY-00-DZY_03",
+      "name": "数据获取请求反馈",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzy",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzy-04",
+      "interfaceId": "TY-DZS00-02_TY-00-DZY_04",
+      "name": "空间环境数据",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzy",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "与环境预报中心接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-02-ty-00-dzy"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-00-dzy-05",
+      "interfaceId": "TY-DZS00-02_TY-00-DZY_05",
+      "name": "产品统计信息",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-00-dzy",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-02-ty-00-dzy"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-01-01",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-01_01",
+      "name": "辅助数据",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-02-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-01-02",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-01_02",
+      "name": "数据传输完成通知（辅助数据）",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-01",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.46",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-02-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-01-03",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-01_03",
+      "name": "数据检索请求反馈",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.11",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-08-01",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-08_01",
+      "name": "运控业务信息（过站信息、计划信息等）",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-02-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-02-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-02_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-02",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-00-dzs-03-01",
+      "interfaceId": "TY-DZS00-03_TY-00-DZS-03_01",
+      "name": "数据检索请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.10",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-00-dzs-03-02",
+      "interfaceId": "TY-DZS00-03_TY-00-DZS-03_02",
+      "name": "数据获取请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.12",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-00-dzs-03-03",
+      "interfaceId": "TY-DZS00-03_TY-00-DZS-03_03",
+      "name": "库表信息检索请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.28",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-00-dzs-03-04",
+      "interfaceId": "TY-DZS00-03_TY-00-DZS-03_04",
+      "name": "元数据文件检索请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.26",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-00-dzs-03-05",
+      "interfaceId": "TY-DZS00-03_TY-00-DZS-03_05",
+      "name": "数据文件检索请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.44",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-04-01",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-04_01",
+      "name": "核心元数据文件",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-03-ty-dzs00-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-04-02",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-04_02",
+      "name": "辅助文件",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-03-ty-dzs00-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-04-03",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-04_03",
+      "name": "学科元数据文件",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-03-ty-dzs00-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-04-04",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-04_04",
+      "name": "档案数据入库完成通知",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.32",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-04-05",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-04_05",
+      "name": "档案数据入库请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.30",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-04-06",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-04_06",
+      "name": "数据检索请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.10",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-04-07",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-04_07",
+      "name": "数据获取请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.12",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-06-01",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-06_01",
+      "name": "数据检索请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.10",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-06-02",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-06_02",
+      "name": "数据实体获取请求",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.19",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-03-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-03-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-03_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-03",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzs-05-01",
+      "interfaceId": "TY-DZS00-04_TY-00-DZS-05_01",
+      "name": "数据集信息",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzs-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "TBD",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-00-dzs-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzs-05-02",
+      "interfaceId": "TY-DZS00-04_TY-00-DZS-05_02",
+      "name": "数据检索请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.11",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzs-05-03",
+      "interfaceId": "TY-DZS00-04_TY-00-DZS-05_03",
+      "name": "数据获取请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.13",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzs-05-04",
+      "interfaceId": "TY-DZS00-04_TY-00-DZS-05_04",
+      "name": "数据文件",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzs-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-00-dzs-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzs-05-05",
+      "interfaceId": "TY-DZS00-04_TY-00-DZS-05_05",
+      "name": "数据出库完成通知",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzs-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.25",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-00-dzs-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzs-05-06",
+      "interfaceId": "TY-DZS00-04_TY-00-DZS-05_06",
+      "name": "元数据转换信息检索请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.41",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzs-05-07",
+      "interfaceId": "TY-DZS00-04_TY-00-DZS-05_07",
+      "name": "元数据文件获取结果",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.43",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzy-01",
+      "interfaceId": "TY-DZS00-04_TY-00-DZY_01",
+      "name": "数据检索请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzy",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzy-02",
+      "interfaceId": "TY-DZS00-04_TY-00-DZY_02",
+      "name": "数据获取请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzy",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "地支内部接口",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzy-03",
+      "interfaceId": "TY-DZS00-04_TY-00-DZY_03",
+      "name": "数据文件",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzy",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-00-dzy"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-00-dzy-04",
+      "interfaceId": "TY-DZS00-04_TY-00-DZY_04",
+      "name": "数据出库完成通知",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-00-dzy",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-00-dzy"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-03-01",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-03_01",
+      "name": "元数据模板",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-dzs00-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-03-02",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-03_02",
+      "name": "数据检索请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.11",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-03-03",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-03_03",
+      "name": "数据获取请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.13",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-03-04",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-03_04",
+      "name": "档案数据入库请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.31",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-03-05",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-03_05",
+      "name": "词表数据",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-03",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-04-ty-dzs00-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-03-06",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-03_06",
+      "name": "档案数据入库完成通知反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.36",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-05-01",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-05_01",
+      "name": "元数据模板",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-05",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-05-02",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-05_02",
+      "name": "词表数据",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-05",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-04-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-06-01",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-06_01",
+      "name": "数据实体存储请求",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.15",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-06-02",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-06_02",
+      "name": "数据实体",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-06",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-06-03",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-06_03",
+      "name": "数据实体获取请求",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.19",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-06-04",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-06_04",
+      "name": "数据实体存储清单",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-06",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.16",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-04-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-04-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-04-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-04_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-04",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-02-01",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-02_01",
+      "name": "任务订单（标定级产品审核）",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.4",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-02-02",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-02_02",
+      "name": "标定级数据产品",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-02",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-02-03",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-02_03",
+      "name": "归档数据清单",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-02",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.3",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-01",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_01",
+      "name": "原始数据产品",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-02",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_02",
+      "name": "编辑级数据产品",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-03",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_03",
+      "name": "辅助数据产品",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-04",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_04",
+      "name": "运控归档数据",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "地支内部接口",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-05",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_05",
+      "name": "标定级数据产品",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-06",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_06",
+      "name": "辅助文件",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-07",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_07",
+      "name": "核心元数据文件",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-08",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_08",
+      "name": "学科元数据文件",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "档案提供",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-09",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_09",
+      "name": "数据文件入库清单",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.8",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-00-dzs-03-10",
+      "interfaceId": "TY-DZS00-05_TY-00-DZS-03_10",
+      "name": "元数据文件",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.7",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-05-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-05-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-05-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-05_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-05",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-00-dzs-03-01",
+      "interfaceId": "TY-DZS00-06_TY-00-DZS-03_01",
+      "name": "数据实体存储请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.17",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-00-dzs-03-02",
+      "interfaceId": "TY-DZS00-06_TY-00-DZS-03_02",
+      "name": "数据实体存储结果清单",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.18",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-06-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-00-dzs-03-03",
+      "interfaceId": "TY-DZS00-06_TY-00-DZS-03_03",
+      "name": "数据实体获取请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.20",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-00-dzs-03-04",
+      "interfaceId": "TY-DZS00-06_TY-00-DZS-03_04",
+      "name": "数据实体",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "链接",
+      "ref": "格式定义",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-00-dzs-03-05",
+      "interfaceId": "TY-DZS00-06_TY-00-DZS-03_05",
+      "name": "数据实体出库完成通知",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-00-dzs-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.24",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-06-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-03-01",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-03_01",
+      "name": "数据检索请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.11",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-03-02",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-03_02",
+      "name": "数据实体获取请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.20",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-03-03",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-03_03",
+      "name": "数据实体",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "链接",
+      "ref": "格式定义",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-03-04",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-03_04",
+      "name": "数据实体出库完成通知",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-03",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.24",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-06-ty-dzs00-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-04-01",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-04_01",
+      "name": "数据实体存储请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.17",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-04-02",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-04_02",
+      "name": "数据实体存储结果清单",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.18",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-06-ty-dzs00-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-04-03",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-04_03",
+      "name": "数据实体获取请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.20",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-04-04",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-04_04",
+      "name": "数据实体",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "链接",
+      "ref": "格式定义",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-04-05",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-04_05",
+      "name": "数据实体出库完成通知",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-04",
+      "method": "文件共享",
+      "exchange": "文件",
+      "ref": "3.1.24",
+      "transport": {
+        "kind": "container",
+        "id": "file-share-ty-dzs00-06-ty-dzs00-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-07-01",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-07_01",
+      "name": "数据实体信息",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-07",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-06-ty-dzs00-07"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-07-02",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-07_02",
+      "name": "数据实体",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-07",
+      "method": "共享存储",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "shared-storage-ty-dzs00-06-ty-dzs00-07"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-07-03",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-07_03",
+      "name": "数据实体恢复请求",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-07",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.33",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-07-04",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-07_04",
+      "name": "数据实体存储请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-07",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.17",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-07-05",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-07_05",
+      "name": "数据实体存储结果清单",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-07",
+      "method": "共享存储",
+      "exchange": "文件",
+      "ref": "3.1.18",
+      "transport": {
+        "kind": "container",
+        "id": "shared-storage-ty-dzs00-06-ty-dzs00-07"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-06-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-12-01",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-12_01",
+      "name": "数据实体信息",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-12",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-06-ty-dzs00-12"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-12-02",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-12_02",
+      "name": "数据实体",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-12",
+      "method": "共享存储",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "shared-storage-ty-dzs00-06-ty-dzs00-12"
+      }
+    },
+    {
+      "id": "ty-dzs00-06-ty-dzs00-12-03",
+      "interfaceId": "TY-DZS00-06_TY-DZS00-12_03",
+      "name": "数据实体回迁请求",
+      "producer": "ty-dzs00-06",
+      "consumer": "ty-dzs00-12",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-06-01",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-06_01",
+      "name": "数据实体备份信息",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-06",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-07-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-06-02",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-06_02",
+      "name": "数据实体恢复请求反馈",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.34",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-06-03",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-06_03",
+      "name": "数据实体恢复状态信息",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-06",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-07-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-06-04",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-06_04",
+      "name": "数据实体",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-06",
+      "method": "共享存储",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "shared-storage-ty-dzs00-07-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-06-05",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-06_05",
+      "name": "数据实体存储请求",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "3.1.15",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-06-06",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-06_06",
+      "name": "数据实体存储清单",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-06",
+      "method": "共享存储",
+      "exchange": "文件",
+      "ref": "3.1.16",
+      "transport": {
+        "kind": "container",
+        "id": "shared-storage-ty-dzs00-07-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-07-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-10_02",
+      "name": "溯源日志",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-trace-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-10_03",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-07-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-07_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-07",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-08-gz-01",
+      "interfaceId": "TY-DZS00-08_GZ_01",
+      "name": "业务信息",
+      "producer": "ty-dzs00-08",
+      "consumer": "gz",
+      "method": "页面集成",
+      "exchange": "消息",
+      "ref": "外部接口",
+      "transport": {
+        "kind": "channel",
+        "id": "web-page-ty-dzs00-08-gz"
+      }
+    },
+    {
+      "id": "ty-dzs00-08-ty-00-dzs-04-01",
+      "interfaceId": "TY-DZS00-08_TY-00-DZS-04_01",
+      "name": "分发信息获取请求",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-00-dzs-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-01-01",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-01_01",
+      "name": "质量信息获取请求",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-08-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-09-03",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-09_03",
+      "name": "数据业务信息获取请求",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-10_01",
+      "name": "流程日志",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-10_02",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-08-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-08_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-08",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-02-01",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-02_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-02",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-02-02",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-02_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-02",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-00-dzs-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-02-03",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-02_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-03-01",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-03_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-03",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-03-02",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-03_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-03",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-00-dzs-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-03-03",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-03_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-04-01",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-04_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-04",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-04-02",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-04_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-04",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-00-dzs-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-04-03",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-04_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-05-01",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-05_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-05",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-05-02",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-05_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-05",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-00-dzs-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-00-dzs-05-03",
+      "interfaceId": "TY-DZS00-09_TY-00-DZS-05_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-01-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-01_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-01",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-01-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-01_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-01",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-01"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-01-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-01_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-01-04",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-01_04",
+      "name": "质量信息获取请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-02-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-02_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-02",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-02-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-02_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-02",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-02"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-02-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-02_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-03-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-03_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-03",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-03-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-03_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-03",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-03"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-03-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-03_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-04-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-04_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-04",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-04-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-04_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-04",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-04"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-04-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-04_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-05-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-05_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-05",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-05-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-05_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-05",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-05"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-05-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-05_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-06-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-06_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-06",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-06-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-06_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-06",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-06-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-06_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-07-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-07_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-07",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-07-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-07_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-07",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-07"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-07-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-07_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-07",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-08-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-08_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-08",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-08-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-08_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-08",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-08"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-08-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-08_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-08-04",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-08_04",
+      "name": "数据业务信息获取结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-10_01",
+      "name": "异常事件处理结果",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-10",
+      "method": "MQ",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": {
+        "kind": "channel",
+        "id": "mq-ty-dzs"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-10_02",
+      "name": "数据检索请求反馈（系统参数）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-10",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-10"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-10_03",
+      "name": "库表创建请求",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-10",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-10-04",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-10_04",
+      "name": "流程日志",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-10-05",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-10_05",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-10-06",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-10_06",
+      "name": "日志信息检索请求（流程信息、心跳信息、异常信息）",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-10",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-09-ty-dzs00-10"
+      }
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-09-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-09_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-09",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-10-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-10_TY-DZS00-09_01",
+      "name": "数据检索请求（系统参数）",
+      "producer": "ty-dzs00-10",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-10-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-10-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-10_TY-DZS00-09_02",
+      "name": "库表创建请求反馈",
+      "producer": "ty-dzs00-10",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-10-ty-dzs00-09-03",
+      "interfaceId": "TY-DZS00-10_TY-DZS00-09_03",
+      "name": "日志信息检索结果（流程信息、心跳信息、异常信息）日志信息",
+      "producer": "ty-dzs00-10",
+      "consumer": "ty-dzs00-09",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-10-ty-dzs00-09"
+      }
+    },
+    {
+      "id": "ty-dzs00-10-ty-dzs00-11-01",
+      "interfaceId": "TY-DZS00-10_TY-DZS00-11_01",
+      "name": "用户登录认证请求接口",
+      "producer": "ty-dzs00-10",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-10-ty-dzs00-11-02",
+      "interfaceId": "TY-DZS00-10_TY-DZS00-11_02",
+      "name": "用户注销认证请求接口",
+      "producer": "ty-dzs00-10",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-10-ty-dzs00-11-03",
+      "interfaceId": "TY-DZS00-10_TY-DZS00-11_03",
+      "name": "用户鉴权请求接口",
+      "producer": "ty-dzs00-10",
+      "consumer": "ty-dzs00-11",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-02-01",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-02_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-02-02",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-02_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-02-03",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-02_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-03-01",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-03_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-03-02",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-03_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-03-03",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-03_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-04-01",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-04_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-04-02",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-04_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-04-03",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-04_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-05-01",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-05_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-05-02",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-05_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-00-dzs-05-03",
+      "interfaceId": "TY-DZS00-11_TY-00-DZS-05_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-00-dzs-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-01-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-01_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-01-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-01_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-01-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-01_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-01",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-02-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-02_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-02-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-02_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-02-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-02_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-02",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-03-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-03_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-03-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-03_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-03-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-03_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-03",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-04-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-04_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-04-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-04_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-04-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-04_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-04",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-05-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-05_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-05-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-05_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-05-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-05_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-05",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-06-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-06_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-06-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-06_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-06-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-06_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-07-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-07_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-07",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-07-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-07_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-07",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-07-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-07_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-07",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-08-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-08_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-08-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-08_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-08-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-08_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-08",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-09-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-09_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-09-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-09_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-09-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-09_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-09",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-10-01",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-10_01",
+      "name": "用户登录认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-10",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-10-02",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-10_02",
+      "name": "用户注销认证反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-10",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-10-03",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-10_03",
+      "name": "用户鉴权结果反馈接口",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-10",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "统一认证对接文档",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-10-04",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-10_04",
+      "name": "流程日志",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-process-log"
+      }
+    },
+    {
+      "id": "ty-dzs00-11-ty-dzs00-10-05",
+      "interfaceId": "TY-DZS00-11_TY-DZS00-10_05",
+      "name": "心跳信息",
+      "producer": "ty-dzs00-11",
+      "consumer": "ty-dzs00-10",
+      "method": "ELK",
+      "exchange": "文件",
+      "ref": "日志规范",
+      "transport": {
+        "kind": "channel",
+        "id": "elk-heartbeat"
+      }
+    },
+    {
+      "id": "ty-dzs00-12-ty-dzs00-06-01",
+      "interfaceId": "TY-DZS00-12_TY-DZS00-06_01",
+      "name": "数据实体灾备信息",
+      "producer": "ty-dzs00-12",
+      "consumer": "ty-dzs00-06",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-12-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-12-ty-dzs00-06-02",
+      "interfaceId": "TY-DZS00-12_TY-DZS00-06_02",
+      "name": "数据实体回迁请求反馈",
+      "producer": "ty-dzs00-12",
+      "consumer": "ty-dzs00-06",
+      "method": "服务调用",
+      "exchange": "消息",
+      "ref": "TBD",
+      "transport": null
+    },
+    {
+      "id": "ty-dzs00-12-ty-dzs00-06-03",
+      "interfaceId": "TY-DZS00-12_TY-DZS00-06_03",
+      "name": "数据实体回迁状态信息",
+      "producer": "ty-dzs00-12",
+      "consumer": "ty-dzs00-06",
+      "method": "数据库",
+      "exchange": "消息",
+      "ref": "数据库设计",
+      "transport": {
+        "kind": "container",
+        "id": "database-ty-dzs00-12-ty-dzs00-06"
+      }
+    },
+    {
+      "id": "ty-dzs00-12-ty-dzs00-06-04",
+      "interfaceId": "TY-DZS00-12_TY-DZS00-06_04",
+      "name": "数据实体",
+      "producer": "ty-dzs00-12",
+      "consumer": "ty-dzs00-06",
+      "method": "共享存储",
+      "exchange": "文件",
+      "ref": "格式定义",
+      "transport": {
+        "kind": "container",
+        "id": "shared-storage-ty-dzs00-12-ty-dzs00-06"
+      }
+    }
+  ],
+  "channels": [
+    {
+      "id": "web-page-ots-ty-dzs00-08",
+      "name": "页面集成：其它系统 （先导任务运行网PaaS服务软件） → 探源科学卫星任务运行网统一门户软件",
+      "type": "WebPage",
+      "method": "页面集成",
+      "count": 1
+    },
+    {
+      "id": "elk-process-log",
+      "name": "ELK 流程日志",
+      "type": "ELK",
+      "method": "ELK",
+      "count": 15
+    },
+    {
+      "id": "elk-trace-log",
+      "name": "ELK 溯源日志",
+      "type": "ELK",
+      "method": "ELK",
+      "count": 12
+    },
+    {
+      "id": "elk-heartbeat",
+      "name": "ELK 心跳信息",
+      "type": "ELK",
+      "method": "ELK",
+      "count": 14
+    },
+    {
+      "id": "web-page-ty-00-dzs-05-gz",
+      "name": "页面集成：探路者一号卫星数据可视化与产品发布网站 → 科学团队",
+      "type": "WebPage",
+      "method": "页面集成",
+      "count": 1
+    },
+    {
+      "id": "web-page-ty-00-dzy-ty-dzs00-08",
+      "name": "页面集成：任务运控与决策支持分系统 → 探源科学卫星任务运行网统一门户软件",
+      "type": "WebPage",
+      "method": "页面集成",
+      "count": 1
+    },
+    {
+      "id": "file-stream-ty-dzs00-01-ty-00-dzs-01",
+      "name": "文件共享/数据流：探源科学卫星数据处理作业调度引擎软件 → 探路者一号卫星数据预处理与产品生成软件",
+      "type": "FileStream",
+      "method": "文件共享/数据流",
+      "count": 2
+    },
+    {
+      "id": "web-page-ty-dzs00-08-gz",
+      "name": "页面集成：探源科学卫星任务运行网统一门户软件 → 科学用户",
+      "type": "WebPage",
+      "method": "页面集成",
+      "count": 1
+    },
+    {
+      "id": "mq-ty-dzs",
+      "name": "mq-ty-dzs",
+      "type": "RabbitMQ",
+      "method": "MQ",
+      "count": 13
+    }
+  ],
+  "containers": [
+    {
+      "id": "database-kxii-dzs00-01-ty-dzs00-01",
+      "name": "数据库：卫星数据处理作业管理软件配置项（先导二期） → 探源科学卫星数据处理作业调度引擎软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-kytxx-ty-dzs00-05",
+      "name": "文件共享：科学应用系统/载荷团队 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 5
+    },
+    {
+      "id": "file-share-ots-ty-dzs00-05",
+      "name": "文件共享：其它项目系统 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 9
+    },
+    {
+      "id": "file-share-sepc-ty-dzs00-02",
+      "name": "文件共享：空间环境预报中心 → 探源科学卫星公共信息库管理软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzs-01-ty-dzs00-01",
+      "name": "文件共享：探路者一号卫星数据预处理与产品生成软件 → 探源科学卫星数据处理作业调度引擎软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 5
+    },
+    {
+      "id": "database-ty-00-dzs-01-ty-dzs00-01",
+      "name": "数据库：探路者一号卫星数据预处理与产品生成软件 → 探源科学卫星数据处理作业调度引擎软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzs-02-ty-00-dzs-04",
+      "name": "文件共享：探路者一号卫星数据产品规范化审核与完整性判读软件 → 探路者一号卫星数据产品订阅与分发服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 3
+    },
+    {
+      "id": "file-share-ty-00-dzs-02-ty-dzs00-05",
+      "name": "文件共享：探路者一号卫星数据产品规范化审核与完整性判读软件 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 6
+    },
+    {
+      "id": "database-ty-00-dzs-02-ty-dzs00-09",
+      "name": "数据库：探路者一号卫星数据产品规范化审核与完整性判读软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzs-03-ty-dzs00-01",
+      "name": "文件共享：探路者一号卫星任务数据库及管理软件 → 探源科学卫星数据处理作业调度引擎软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "file-share-ty-00-dzs-03-ty-dzs00-03",
+      "name": "文件共享：探路者一号卫星任务数据库及管理软件 → 探源科学卫星元数据编审与数据集构建软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzs-03-ty-dzs00-05",
+      "name": "文件共享：探路者一号卫星任务数据库及管理软件 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzs-03-ty-dzs00-06",
+      "name": "文件共享：探路者一号卫星任务数据库及管理软件 → 探源科学卫星数据分级存储管理软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "database-ty-00-dzs-03-ty-dzs00-09",
+      "name": "数据库：探路者一号卫星任务数据库及管理软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzs-04-psc",
+      "name": "文件共享：探路者一号卫星数据产品订阅与分发服务软件 → 载荷团队（探路者一号）",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 4
+    },
+    {
+      "id": "database-ty-00-dzs-04-ty-dzs00-09",
+      "name": "数据库：探路者一号卫星数据产品订阅与分发服务软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-00-dzs-05-ty-dzs00-09",
+      "name": "数据库：探路者一号卫星数据可视化与产品发布网站 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzy-ty-dzs00-01",
+      "name": "文件共享：任务运控与决策支持分系统 → 探源科学卫星数据处理作业调度引擎软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 5
+    },
+    {
+      "id": "database-ty-00-dzy-ty-dzs00-02",
+      "name": "数据库：任务运控与决策支持分系统 → 探源科学卫星公共信息库管理软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-00-dzy-ty-dzs00-05",
+      "name": "文件共享：任务运控与决策支持分系统 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-01-kxii-dzs00-01",
+      "name": "数据库：探源科学卫星数据处理作业调度引擎软件 → 卫星数据处理作业管理软件配置项（先导二期）",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-01-ty-00-dzs-01",
+      "name": "文件共享：探源科学卫星数据处理作业调度引擎软件 → 探路者一号卫星数据预处理与产品生成软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 4
+    },
+    {
+      "id": "database-ty-dzs00-01-ty-00-dzs-01",
+      "name": "数据库：探源科学卫星数据处理作业调度引擎软件 → 探路者一号卫星数据预处理与产品生成软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-01-ty-00-dzs-02",
+      "name": "文件共享：探源科学卫星数据处理作业调度引擎软件 → 探路者一号卫星数据产品规范化审核与完整性判读软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 4
+    },
+    {
+      "id": "file-share-ty-dzs00-01-ty-00-dzs-05",
+      "name": "文件共享：探源科学卫星数据处理作业调度引擎软件 → 探路者一号卫星数据可视化与产品发布网站",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-01-ty-00-dzy",
+      "name": "文件共享：探源科学卫星数据处理作业调度引擎软件 → 任务运控与决策支持分系统",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-01-ty-dzs00-09",
+      "name": "数据库：探源科学卫星数据处理作业调度引擎软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-02-ty-00-dzs-04",
+      "name": "文件共享：探源科学卫星公共信息库管理软件 → 探路者一号卫星数据产品订阅与分发服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "file-share-ty-dzs00-02-ty-00-dzy",
+      "name": "文件共享：探源科学卫星公共信息库管理软件 → 任务运控与决策支持分系统",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-02-ty-00-dzy",
+      "name": "数据库：探源科学卫星公共信息库管理软件 → 任务运控与决策支持分系统",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-02-ty-dzs00-01",
+      "name": "文件共享：探源科学卫星公共信息库管理软件 → 探源科学卫星数据处理作业调度引擎软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-02-ty-dzs00-09",
+      "name": "数据库：探源科学卫星公共信息库管理软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-03-ty-dzs00-04",
+      "name": "文件共享：探源科学卫星元数据编审与数据集构建软件 → 探源科学卫星数据集档案库及管理软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 3
+    },
+    {
+      "id": "database-ty-dzs00-03-ty-dzs00-09",
+      "name": "数据库：探源科学卫星元数据编审与数据集构建软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-04-ty-00-dzs-05",
+      "name": "文件共享：探源科学卫星数据集档案库及管理软件 → 探路者一号卫星数据可视化与产品发布网站",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 3
+    },
+    {
+      "id": "file-share-ty-dzs00-04-ty-00-dzy",
+      "name": "文件共享：探源科学卫星数据集档案库及管理软件 → 任务运控与决策支持分系统",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "file-share-ty-dzs00-04-ty-dzs00-03",
+      "name": "文件共享：探源科学卫星数据集档案库及管理软件 → 探源科学卫星元数据编审与数据集构建软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-04-ty-dzs00-03",
+      "name": "数据库：探源科学卫星数据集档案库及管理软件 → 探源科学卫星元数据编审与数据集构建软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-04-ty-dzs00-05",
+      "name": "文件共享：探源科学卫星数据集档案库及管理软件 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-04-ty-dzs00-05",
+      "name": "数据库：探源科学卫星数据集档案库及管理软件 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-04-ty-dzs00-06",
+      "name": "文件共享：探源科学卫星数据集档案库及管理软件 → 探源科学卫星数据分级存储管理软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-04-ty-dzs00-09",
+      "name": "数据库：探源科学卫星数据集档案库及管理软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-05-ty-00-dzs-02",
+      "name": "文件共享：探源科学卫星数据产品归档汇交服务软件 → 探路者一号卫星数据产品规范化审核与完整性判读软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "file-share-ty-dzs00-05-ty-00-dzs-03",
+      "name": "文件共享：探源科学卫星数据产品归档汇交服务软件 → 探路者一号卫星任务数据库及管理软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 10
+    },
+    {
+      "id": "database-ty-dzs00-05-ty-dzs00-09",
+      "name": "数据库：探源科学卫星数据产品归档汇交服务软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-06-ty-00-dzs-03",
+      "name": "文件共享：探源科学卫星数据分级存储管理软件 → 探路者一号卫星任务数据库及管理软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "file-share-ty-dzs00-06-ty-dzs00-03",
+      "name": "文件共享：探源科学卫星数据分级存储管理软件 → 探源科学卫星元数据编审与数据集构建软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 1
+    },
+    {
+      "id": "file-share-ty-dzs00-06-ty-dzs00-04",
+      "name": "文件共享：探源科学卫星数据分级存储管理软件 → 探源科学卫星数据集档案库及管理软件",
+      "type": "fileShare",
+      "method": "文件共享",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-06-ty-dzs00-07",
+      "name": "数据库：探源科学卫星数据分级存储管理软件 → 探源科学卫星数据备份与恢复软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "shared-storage-ty-dzs00-06-ty-dzs00-07",
+      "name": "共享存储：探源科学卫星数据分级存储管理软件 → 探源科学卫星数据备份与恢复软件",
+      "type": "sharedStorage",
+      "method": "共享存储",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-06-ty-dzs00-09",
+      "name": "数据库：探源科学卫星数据分级存储管理软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-06-ty-dzs00-12",
+      "name": "数据库：探源科学卫星数据分级存储管理软件 → 探源科学卫星数据灾备与回迁软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "shared-storage-ty-dzs00-06-ty-dzs00-12",
+      "name": "共享存储：探源科学卫星数据分级存储管理软件 → 探源科学卫星数据灾备与回迁软件",
+      "type": "sharedStorage",
+      "method": "共享存储",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-07-ty-dzs00-06",
+      "name": "数据库：探源科学卫星数据备份与恢复软件 → 探源科学卫星数据分级存储管理软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 2
+    },
+    {
+      "id": "shared-storage-ty-dzs00-07-ty-dzs00-06",
+      "name": "共享存储：探源科学卫星数据备份与恢复软件 → 探源科学卫星数据分级存储管理软件",
+      "type": "sharedStorage",
+      "method": "共享存储",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-07-ty-dzs00-09",
+      "name": "数据库：探源科学卫星数据备份与恢复软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-08-ty-dzs00-09",
+      "name": "数据库：探源科学卫星任务运行网统一门户软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-00-dzs-02",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探路者一号卫星数据产品规范化审核与完整性判读软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-00-dzs-03",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探路者一号卫星任务数据库及管理软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-00-dzs-04",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探路者一号卫星数据产品订阅与分发服务软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-00-dzs-05",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探路者一号卫星数据可视化与产品发布网站",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-01",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星数据处理作业调度引擎软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-02",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星公共信息库管理软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-03",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星元数据编审与数据集构建软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-04",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星数据集档案库及管理软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-05",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星数据产品归档汇交服务软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-06",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星数据分级存储管理软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-07",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星数据备份与恢复软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-08",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星任务运行网统一门户软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 1
+    },
+    {
+      "id": "database-ty-dzs00-09-ty-dzs00-10",
+      "name": "数据库：探源科学卫星数据系统综合监管软件 → 探源科学卫星日志管理与数据溯源软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-10-ty-dzs00-09",
+      "name": "数据库：探源科学卫星日志管理与数据溯源软件 → 探源科学卫星数据系统综合监管软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 2
+    },
+    {
+      "id": "database-ty-dzs00-12-ty-dzs00-06",
+      "name": "数据库：探源科学卫星数据灾备与回迁软件 → 探源科学卫星数据分级存储管理软件",
+      "type": "database",
+      "method": "数据库",
+      "count": 2
+    },
+    {
+      "id": "shared-storage-ty-dzs00-12-ty-dzs00-06",
+      "name": "共享存储：探源科学卫星数据灾备与回迁软件 → 探源科学卫星数据分级存储管理软件",
+      "type": "sharedStorage",
+      "method": "共享存储",
+      "count": 1
+    }
+  ]
+}

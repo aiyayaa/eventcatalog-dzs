@@ -1,0 +1,27 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: flows/test-flow (v0.0.1)
+%% Generated: 2026-06-01T08:15:55.851Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef step fill:#374151,stroke:#1f2937,color:#fff
+    classDef externalSystem fill:#ec4899,stroke:#be185d,color:#fff
+
+    %% Nodes
+    step_ty_dzs00_05["第一步"]:::step
+    step_cancel_subscription_request["Cancel Subscription"]:::step
+    step_stripe_integration[["Stripe"]]:::externalSystem
+    step_subscription_service["Subscription Service"]:::step
+    step_subscription_cancelled["Subscription has been Cancelled"]:::step
+    step_subscription_rejected["Subscription cancellation has been rejected"]:::step
+    step_notification_service["Notifications Service"]:::step
+
+    %% Edges
+    step_ty_dzs00_05 -->|"Initiate subscription cancellation"| step_cancel_subscription_request
+    step_cancel_subscription_request -->|"Proceed to subscription service"| step_subscription_service
+    step_stripe_integration -->|"Return to subscription service"| step_subscription_service
+    step_subscription_service -->|"Cancel subscription via Stripe"| step_stripe_integration
+    step_subscription_service -->|"Successful cancellation"| step_subscription_cancelled
+    step_subscription_service -->|"Failed cancellation"| step_subscription_rejected
+    step_subscription_cancelled -->|"Email customer"| step_notification_service

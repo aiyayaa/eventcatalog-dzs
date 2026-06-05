@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: commands/ty-dzs00-04-ty-dzs00-11-02 (v1.0.0)
+%% Generated: 2026-06-01T08:15:53.791Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef commands fill:#3b82f6,stroke:#1d4ed8,color:#fff
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+
+    %% Nodes
+    ty_dzs00_04_ty_dzs00_11_02_1_0_0>"用户注销认证接口 (1.0.0)"]:::commands
+    ty_dzs00_04_1_0_0[["探源科学卫星数据集档案库及管理软件 (1.0.0)"]]:::services
+    ty_dzs00_11_1_0_0[["探源科学卫星智能安全认证与权限管控软件 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_dzs00_04_1_0_0 -->|"invokes"| ty_dzs00_04_ty_dzs00_11_02_1_0_0
+    ty_dzs00_04_ty_dzs00_11_02_1_0_0 -->|"accepts"| ty_dzs00_11_1_0_0

@@ -1,0 +1,16 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: services/spec (v1.0.0)
+%% Generated: 2026-06-01T08:15:53.929Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    spec_1_0_0[["空间环境预报中心 (1.0.0)"]]:::services
+    objectstore_sepc_ty_dzs00_02_01_1_0_0[("空间环境数据")]:::data
+
+    %% Edges
+    spec_1_0_0 -->|"writes to   (file-share)"| objectstore_sepc_ty_dzs00_02_01_1_0_0

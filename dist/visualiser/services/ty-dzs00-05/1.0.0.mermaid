@@ -1,0 +1,116 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: services/ty-dzs00-05 (v1.0.0)
+%% Generated: 2026-06-01T08:15:54.166Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef commands fill:#3b82f6,stroke:#1d4ed8,color:#fff
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    ots_ty_dzs00_05_09_1_0_0>"数据汇交清单（先导）（GECAM标定级、ASO-S标定级） (1.0.0)"]:::commands
+    ty_dzs00_05_1_0_0[["探源科学卫星数据产品归档汇交服务软件 (1.0.0)"]]:::services
+    other_1_0_0[["其它项目系统 (1.0.0)"]]:::services
+    ty_dzs00_09_ty_dzs00_05_03_1_0_0>"库表创建 (1.0.0)"]:::commands
+    ty_dzs00_09_1_0_0[["探源科学卫星数据系统综合监管软件 (1.0.0)"]]:::services
+    ty_dzs00_05_1_0_0[["探源科学卫星数据产品归档汇交服务软件 (1.0.0)"]]:::services
+    database_ty_dzs00_05_ty_dzs00_09_01_1_0_0[("数据检索请求（系统参数）")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_02_02_1_0_0[("标定级数据产品")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_02_03_1_0_0[("归档数据清单")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_01_1_0_0[("原始数据产品")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_02_1_0_0[("编辑级数据产品")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_03_1_0_0[("辅助数据产品")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_04_1_0_0[("运控归档数据")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_05_1_0_0[("标定级数据产品")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_06_1_0_0[("辅助文件")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_07_1_0_0[("核心元数据文件")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_08_1_0_0[("学科元数据文件")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_09_1_0_0[("数据文件入库清单")]:::data
+    objectstore_ty_dzs00_05_ty_xx_dzs_03_10_1_0_0[("元数据文件")]:::data
+    database_ty_dzs00_04_ty_dzs00_05_02_1_0_0[("词表数据")]:::data
+    database_ty_dzs00_09_ty_dzs00_05_02_1_0_0[("数据检索请求反馈（系统参数）")]:::data
+    objectstore_kytxx_ty_dzs00_05_01_1_0_0[("辅助文件")]:::data
+    objectstore_kytxx_ty_dzs00_05_02_1_0_0[("核心元数据")]:::data
+    objectstore_kytxx_ty_dzs00_05_03_1_0_0[("学科元数据")]:::data
+    objectstore_kytxx_ty_dzs00_05_04_1_0_0[("标定级数据产品")]:::data
+    objectstore_kytxx_ty_dzs00_05_05_1_0_0[("归档数据清单")]:::data
+    objectstore_ots_ty_dzs00_05_01_1_0_0[("辅助文件")]:::data
+    objectstore_ots_ty_dzs00_05_02_1_0_0[("核心元数据")]:::data
+    objectstore_ots_ty_dzs00_05_03_1_0_0[("学科元数据")]:::data
+    objectstore_ots_ty_dzs00_05_04_1_0_0[("数据产品（先导原始、先导编辑级、先导标定级、其它项目）")]:::data
+    objectstore_ots_ty_dzs00_05_05_1_0_0[("运控归档数据（先导）")]:::data
+    objectstore_ots_ty_dzs00_05_06_1_0_0[("归档数据清单（探源） （先导原始、先导编辑级）")]:::data
+    objectstore_ots_ty_dzs00_05_07_1_0_0[("归档数据清单（探源） （HXMT标定级、DAMPE标定级）")]:::data
+    objectstore_ots_ty_dzs00_05_08_1_0_0[("归档数据清单（先导） （EP标定级、SVOM标定级、SMILE标定级）")]:::data
+    objectstore_ots_ty_dzs00_05_10_1_0_0[("运控归档文件传输完成通知（先导）")]:::data
+    objectstore_ty_00_dzy_ty_dzs00_05_01_1_0_0[("运控归档数据")]:::data
+    objectstore_ty_00_dzy_ty_dzs00_05_02_1_0_0[("运控归档文件传输完成通知")]:::data
+    objectstore_ty_dzs00_04_ty_dzs00_05_01_1_0_0[("元数据模板")]:::data
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_01_1_0_0[("任务完成通知（标定级产品审核）")]:::data
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_02_1_0_0[("数据判读结果")]:::data
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_03_1_0_0[("原始数据产品")]:::data
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_04_1_0_0[("编辑级数据产品")]:::data
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_05_1_0_0[("辅助数据产品")]:::data
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_06_1_0_0[("归档数据清单（原始、编辑级、辅助数据产品）")]:::data
+    objectstore_ty_xx_dzs_03_ty_dzs00_05_01_1_0_0[("数据文件入库清单结果反馈")]:::data
+    ty_dzs00_05_ty_dzs00_11_01_1_0_0>"用户登录认证接口 (1.0.0)"]:::commands
+    ty_dzs00_11_1_0_0[["探源科学卫星智能安全认证与权限管控软件 (1.0.0)"]]:::services
+    ty_dzs00_05_ty_dzs00_11_02_1_0_0>"用户注销认证接口 (1.0.0)"]:::commands
+    ty_dzs00_05_ty_dzs00_11_03_1_0_0>"用户鉴权接口 (1.0.0)"]:::commands
+    ty_dzs00_05_ty_xx_dzs_02_01_1_0_0>"任务订单（标定级产品审核） (1.0.0)"]:::commands
+    ty_0x_dzs_02_1_0_0[["XX卫星数据产品规范化审核与完整性判读软件 (1.0.0)"]]:::services
+
+    %% Edges
+    other_1_0_0 -->|"invokes"| ots_ty_dzs00_05_09_1_0_0
+    ots_ty_dzs00_05_09_1_0_0 -->|"accepts"| ty_dzs00_05_1_0_0
+    ty_dzs00_09_1_0_0 -->|"invokes"| ty_dzs00_09_ty_dzs00_05_03_1_0_0
+    ty_dzs00_09_ty_dzs00_05_03_1_0_0 -->|"accepts"| ty_dzs00_05_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (database)"| database_ty_dzs00_05_ty_dzs00_09_01_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_02_02_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_02_03_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_01_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_02_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_03_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_04_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_05_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_06_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_07_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_08_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_09_1_0_0
+    ty_dzs00_05_1_0_0 -->|"writes to   (file-share)"| objectstore_ty_dzs00_05_ty_xx_dzs_03_10_1_0_0
+    database_ty_dzs00_04_ty_dzs00_05_02_1_0_0 -->|"reads from   (database)"| ty_dzs00_05_1_0_0
+    database_ty_dzs00_09_ty_dzs00_05_02_1_0_0 -->|"reads from   (database)"| ty_dzs00_05_1_0_0
+    objectstore_kytxx_ty_dzs00_05_01_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_kytxx_ty_dzs00_05_02_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_kytxx_ty_dzs00_05_03_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_kytxx_ty_dzs00_05_04_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_kytxx_ty_dzs00_05_05_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_01_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_02_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_03_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_04_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_05_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_06_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_07_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_08_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ots_ty_dzs00_05_10_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_00_dzy_ty_dzs00_05_01_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_00_dzy_ty_dzs00_05_02_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_dzs00_04_ty_dzs00_05_01_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_01_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_02_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_03_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_04_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_05_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_xx_dzs_02_ty_dzs00_05_06_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    objectstore_ty_xx_dzs_03_ty_dzs00_05_01_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_05_1_0_0
+    ty_dzs00_05_1_0_0 -->|"invokes"| ty_dzs00_05_ty_dzs00_11_01_1_0_0
+    ty_dzs00_05_ty_dzs00_11_01_1_0_0 -->|"accepts"| ty_dzs00_11_1_0_0
+    ty_dzs00_05_1_0_0 -->|"invokes"| ty_dzs00_05_ty_dzs00_11_02_1_0_0
+    ty_dzs00_05_ty_dzs00_11_02_1_0_0 -->|"accepts"| ty_dzs00_11_1_0_0
+    ty_dzs00_05_1_0_0 -->|"invokes"| ty_dzs00_05_ty_dzs00_11_03_1_0_0
+    ty_dzs00_05_ty_dzs00_11_03_1_0_0 -->|"accepts"| ty_dzs00_11_1_0_0
+    ty_dzs00_05_1_0_0 -->|"invokes"| ty_dzs00_05_ty_xx_dzs_02_01_1_0_0
+    ty_dzs00_05_ty_xx_dzs_02_01_1_0_0 -->|"accepts"| ty_0x_dzs_02_1_0_0

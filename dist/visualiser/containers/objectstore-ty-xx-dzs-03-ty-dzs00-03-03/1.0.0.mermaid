@@ -1,0 +1,18 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: containers/objectstore-ty-xx-dzs-03-ty-dzs00-03-03 (v1.0.0)
+%% Generated: 2026-06-01T08:15:56.767Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data fill:#3b82f6,stroke:#1d4ed8,color:#fff
+
+    %% Nodes
+    ty_0x_dzs_03_1_0_0[["XX卫星任务数据库及管理软件 (1.0.0)"]]:::services
+    objectstore_ty_xx_dzs_03_ty_dzs00_03_03_1_0_0[("数据文件清单（辅助文件、批次汇交数据文件）")]:::data
+    ty_dzs00_03_1_0_0[["探源科学卫星元数据编审与数据集构建软件 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_0x_dzs_03_1_0_0 -->|"writes to"| objectstore_ty_xx_dzs_03_ty_dzs00_03_03_1_0_0
+    objectstore_ty_xx_dzs_03_ty_dzs00_03_03_1_0_0 -->|"reads from   (file-share)"| ty_dzs00_03_1_0_0

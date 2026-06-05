@@ -1,0 +1,21 @@
+%% EventCatalog Mermaid Diagram
+%% Resource: data-products/pre-generated-dataset-discipline-specific-metadata-file (v1.0.0)
+%% Generated: 2026-06-01T08:15:57.316Z
+
+flowchart LR
+
+    %% Style definitions
+    classDef services fill:#ec4899,stroke:#be185d,color:#fff
+    classDef data_products fill:#6366f1,stroke:#4338ca,color:#fff
+
+    %% Nodes
+    ty_dzs00_05_1_0_0[["探源科学卫星数据产品归档汇交服务软件 (1.0.0)"]]:::services
+    ty_0x_dzs_03_1_0_0[["XX卫星任务数据库及管理软件 (1.0.0)"]]:::services
+    pre_generated_dataset_discipline_specific_metadata_file_1_0_0[["预生成学科元数据文件 (1.0.0)"]]:::data_products
+    ty_dzs00_03_1_0_0[["探源科学卫星元数据编审与数据集构建软件 (1.0.0)"]]:::services
+
+    %% Edges
+    ty_dzs00_05_1_0_0 -->|"input"| pre_generated_dataset_discipline_specific_metadata_file_1_0_0
+    ty_0x_dzs_03_1_0_0 -->|"input"| pre_generated_dataset_discipline_specific_metadata_file_1_0_0
+    pre_generated_dataset_discipline_specific_metadata_file_1_0_0 -->|"output"| ty_0x_dzs_03_1_0_0
+    pre_generated_dataset_discipline_specific_metadata_file_1_0_0 -->|"output"| ty_dzs00_03_1_0_0
