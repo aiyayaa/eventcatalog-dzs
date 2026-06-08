@@ -6,7 +6,7 @@ export default {
 
   base: '/eventcatalog-dzs/',
   output: 'static',
-  landingPage: '/visualiser',
+  trailingSlash: true,
 
   docs: {
     sidebar: {
