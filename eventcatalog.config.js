@@ -4,7 +4,7 @@ export default {
   tagline: '太空探源专项地面支撑系统数据处理与研究支持分系统接口目录',
   organizationName: '数据处理与研究支持分系统',
 
-  base: '/eventcatalog-dzs/',
+  base: '/eventcatalog-dzs',
   output: 'static',
   trailingSlash: true,
 
